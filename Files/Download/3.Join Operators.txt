@@ -1,0 +1,26 @@
+Vazifa 1: O'rta darajali (1)
+Berilgan ikkita ro'yxatni bir-biriga bog'langan joylar asosida birlashtiring va natijani qaytaring.
+
+Vazifa 2: O'rta darajali (2)
+Berilgan ikkita ro'yxatni bir-biriga bog'langan joylar asosida birlashtiring va birinchi ro'yxatdagi elementlarni qaytaring.
+
+Vazifa 3: O'rta darajali (3)
+Berilgan ikkita ro'yxatni bir-biriga bog'langan joylar asosida birlashtiring va ikkinchi ro'yxatdagi elementlarni qaytaring.
+
+Vazifa 4: O'rta darajali (4)
+Berilgan ikkita ro'yxatni bir-biriga bog'langan joylar asosida birlashtiring va o'zaro bog'langan elementlarni yangi obyekt sifatida qaytaring.
+
+Vazifa 5: Yuqori darajali (5)
+Berilgan ikkita ro'yxatni bir-biriga bog'langan joylar asosida birlashtiring va natijani tartiblangan ro'yxat sifatida qaytaring.
+
+Vazifa 6: Yuqori darajali (6)
+Berilgan ikkita ro'yxatni bir-biriga bog'langan joylar asosida birlashtiring va natijani tartiblangan ro'yxat sifatida qaytaring, ikkinchi ro'yxatda hech qaysi bog'lanish bo'lmasa, "null" qaytaring.
+
+Vazifa 7: Yuqori darajali (7)
+Berilgan ikkita ro'yxatni bir-biriga bog'langan joylar asosida birlashtiring va natijani guruhlar sifatida tartiblangan ro'yxat sifatida qaytaring.
+
+Vazifa 8: Yuqori darajali (8)
+Berilgan ikkita ro'yxatni bir-biriga bog'langan joylar asosida birlashtiring va natijani tartiblangan ro'yxat sifatida qaytaring, birinchi ro'yxatda hech qaysi bog'lanish bo'lmasa, "null" qaytaring.
+
+Vazifa 9: Yuqori darajali (9)
+Berilgan ikkita ro'yxatni bir-biriga bog'langan joylar asosida birlashtiring va natijani tartiblangan ro'yxat sifatida qaytaring, ikkinchi ro'yxatdagi elementlarni birlashtirgan ro'yxat elementlari bilan birlashtiring.

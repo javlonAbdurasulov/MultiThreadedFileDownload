@@ -1,0 +1,4 @@
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-interfaces
+https://www.javatpoint.com/csharp-iterators
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements
+https://www.c-sharpcorner.com/UploadFile/8a67c0/iteration-statements-in-C-Sharp778/

@@ -1,0 +1,632 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //1
+    /*int a,b,c;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    if(a>b && a>c){
+    cout<<"Max a: "<<a;}
+    else if(b>a && b>c){
+    cout<<"Max b: "<<b;}
+    else{cout<<"Max c: "<<c;}
+    
+
+    //2 
+    int a,b,c;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    if(a<b && a<c){
+    cout<<" "<<a;
+    if(b>c){
+    cout<<c<<" ";
+    cout<<b<<" ";}
+    else{cout<<b<<" ";
+    cout<<c<<" ";}}
+    else if(b<a && b<c){
+    cout<<" "<<a;
+    if(a>c){
+    cout<<c<<" ";
+    cout<<a<<" ";}
+    else{cout<<a<<" ";
+    cout<<c<<" ";}}
+    else{cout<<c<<" ";
+    if(a>b){
+    cout<<b<<" ";
+    cout<<a<<" ";}
+    else{
+    cout<<a<<" ";
+        cout<<b<<" ";
+    }
+    }
+    
+    //3
+    int a;
+    cout<<"A: "; cin>>a;
+    if(a>-100 && a<-9 && a<0){
+    cout<<"Double-digit negative number "<<endl;}
+    else if(a>-1000 && a<-99 && a<0){
+    cout<<"Triple-digit negative number "<<endl;}
+    else if(a>-10 && a<0){
+    cout<<"Single-digit negative number "<<endl;}
+    else if(a==0){
+    cout<<"Null "<<endl;}
+    else if(a<1000 && a>99 && a>0){
+    cout<<"Triple-digit positive number "<<endl;}
+    else if(a<100 && a>9 && a>0){
+    cout<<"Double-digit positive number "<<endl;}
+    else if(a<10 && a>0){
+    cout<<"Single-digit positive number "<<endl;}
+    
+    //4
+    int a;
+    cout<<"A: "; cin>>a;
+    if(a%2==0){
+    if(a>0 && a<9){
+    cout<<"Single-digit couple number"<<endl;}
+    else if(a>9 && a<100){
+    cout<<"Double-digit couple number "<<endl;}
+    else if(a>99 && a<1000){
+    cout<<"Triple-digit couple number "<<endl;}
+    else{cout<<"Four-digit couple number "<<endl;}}
+    
+    if(a%2==1){
+    if(a>0 && a<9){
+    cout<<"Single-digit odd number"<<endl;}
+    else if(a>9 && a<100){
+    cout<<"Double-digit odd number "<<endl;}
+    else if(a>99 && a<1000){
+    cout<<"Triple-digit odd number "<<endl;}
+    else{cout<<"Four-digit odd number "<<endl;}}*/
+    
+
+   //5 
+	
+int year;
+ 
+    cout << "Year: ";
+    cin >> year;
+ 
+    if (year % 4 == 0)
+    {
+        if (year % 100 == 0)
+        {
+            if (year % 400 == 0)
+            {
+                cout << year << " year is leap!" << endl;
+            }
+            else{
+                    cout << year << " year is not leap!" << endl;
+                }
+        }
+        else{
+            cout << year << " year is leap!" << endl;
+            }
+    }
+    else{
+            cout << year << " year is not leap!" << endl;
+        }
+
+    
+
+    //6
+    int a;
+    cout<<"A: "; cin>>a;
+    if(a>0 && a<56)
+    {
+        cout<<" 2 Unsatisfied "<<endl;
+    }
+    else if(a>55 && a<71)
+    {
+        cout<<" 3 Satisfactory "<<endl;
+    }
+    else if(a>70 && a<86)
+    {
+        cout<<" 4 Good "<<endl;
+    }
+    else if(a>86 && a<101)
+    {
+        cout<<" 5 Excellent "<<endl;
+    }
+    else{
+        cout<<"You enter wrong score! ";
+    }
+    
+    
+    //7
+    int a,a1,a100;
+    cout<<"A: "; cin>>a;
+    a1=a%10;
+    a100=a/100%10;
+    if(a1==a100)
+    {
+        cout<<"Palindrome "<<endl;
+    }
+    else
+    {cout<<"Not a palindrome "<<endl;
+        
+    }
+    
+    
+    //8
+    int a,a1,a10,a100;
+    cout<<"A: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    if(a1>a10 && a10>a100){
+        cout<<"Sequentially growing "<<endl;
+    }
+    else if(a1<a10 && a10<a100){
+        cout<<"Successively decreasing "<<endl;
+    }
+    else{
+        cout<<"Not a three-digit number "<<endl;
+    }
+    
+    
+    //9
+    int a,b,c;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    if(a==b || b==c || c==a){
+        cout<<"Both are equal "<<endl;
+    }
+    else{
+        cout<<"Not equal "<<endl;
+    }
+    
+    
+    //10
+    int K,D; //40/100=0.4 per km  0.4D=K
+    cout<<"K: "; cin>>K;
+    cout<<"D: "; cin>>D;
+    if(K*2.5>=D){
+        cout<<"Enouf to finish distance "<<endl;
+    }
+    else if(K*2.5<D){
+        cout<<"How many required power need: "<<(D-K*2.5)/2.5<<endl;
+    }
+    else{
+        cout<<"You have never will cover this distance "<<endl;
+    }
+    
+    //11
+    int day,payment;
+    cout<<"Day: "; cin>>day;
+    cout<<"payment: "; cin>>payment;
+    if(day<=3){
+        cout<<"Payment with sale: "<<payment*0.9<<endl;
+    }
+    else if(day>15){
+        cout<<"Payment without sale: "<<payment*1.1<<endl;
+    }
+    else{
+        cout<<"Payment "<<payment;
+    }
+    
+    
+    //12
+    int temperature;
+    cout<<"Temperature: "; cin>>temperature;
+    if(temperature>25){
+        cout<<"Open window "<<endl;
+    }
+    else{
+        cout<<"Close window "<<endl;
+    }
+    
+    
+    //13
+    string colour;
+    cout<<"Colour: "; cin>>colour;
+    if(colour=="red"){
+        cout<<"Stop "<<endl;
+    }
+    else if(colour=="yellow "){
+        cout<<"Ready "<<endl;
+    }
+    else if(colour=="green "){
+        cout<<"Go "<<endl;
+    }
+    else{
+        cout<<"Gasoline ran out "<<endl;
+    }
+    
+    
+    //14
+    int a,b,c,min,max;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    min=a;
+    if(b<min) min=b;
+    if(c<min) min=c;
+    cout<<"min: "<<min<<endl;
+    max=b;
+    if(a>max) max=a;
+    if(c>max) max=c;
+    cout<<"max: "<<max<<endl;
+    
+    
+    //15
+    int salary,minimum_wage;
+    cout<<"Salary: "; cin>>salary;
+    cout<<"Minimum wage: "; cin>>minimum_wage;
+    if(salary<=5*minimum_wage){
+        cout<<"Tax: "<<0.09*salary<<endl;
+    }
+    else if(salary>5*minimum_wage && salary<=10*minimum_wage){
+        cout<<"Tax: "<<0.16*salary<<endl;
+    }
+    else {
+        cout<<"Tax: "<<0.23*salary<<endl;
+    }
+    
+    
+    //16
+    int a;
+    cout<<"A: "; cin>>a;
+    if(a==101){
+        cout<<"Fire department "<<endl;
+    }
+    else if(a==102){
+        cout<<"Police department "<<endl;
+    }
+    else if(a==103){
+        cout<<"Ambulance "<<endl;
+    }
+    else if(a==104){
+        cout<<"Gas department "<<endl;
+    }
+    else{
+        cout<<"You dialed the wrong number "<<endl;
+    }
+    
+    
+    //17
+    string a;
+    cout<<"A: "; cin>>a;
+    if(a=="Aziz20"){
+        cout<<"Assalomu aleykum Azizbek, Xush kelibsiz "<<endl;
+    }
+    else{
+        cout<<"Siz xato passwordni kiritidingiz "<<endl;
+    }
+    
+    
+    //20
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int number;
+    cout<<"Sonni kiriting: ";
+    cin>>number;//73
+
+    int r1 = number%10; //3
+    int r10 = number/10%10;//7
+
+    if(r10 == 1){
+        cout<<"O`n ";
+    }else if(r10 == 2){
+        cout<<"Yigirma ";
+    }else if(r10 == 3){
+        cout<<"O`ttiz ";
+    }else if(r10 == 4){
+        cout<<"Qirq ";
+    }else if(r10 == 5){
+        cout<<"Ellik ";
+    }else if(r10 == 6){
+        cout<<"Oltmish ";
+    }else if(r10 == 7){
+        cout<<"Yetmish ";
+    }else if(r10 == 8){
+        cout<<"Sakson ";
+    }else if(r10 == 9){
+        cout<<"To`qson ";
+    }else{
+        cout<<"";
+    }
+
+
+    if(r1 == 1){
+        cout<<"bir ";
+    }else if(r1 == 2){
+        cout<<"ikki ";
+    }else if(r1 == 3){
+        cout<<"uch ";
+    }else if(r1 == 4){
+        cout<<"to`rt ";
+    }else if(r1 == 5){
+        cout<<"besh ";
+    }else if(r1 == 6){
+        cout<<"olti ";
+    }else if(r1 == 7){
+        cout<<"yetti ";
+    }else if(r1 == 8){
+        cout<<"sakkiz ";
+    }else if(r1 == 9){
+        cout<<"to`qqiz ";
+    }else{
+        cout<<"";
+    }
+    
+    
+
+
+
+
+
+
+   
+ 
+    return 0;
+}
+
+
+//Photo
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    //1
+    /*int a;
+    cout<<"A: "; cin>>a;
+    if(a>0){
+        a+=1;
+    }
+    cout<<a;
+    
+    //2
+    int a;
+    cout<<"A: "; cin>>a;
+    if(a>0){
+        (a+=1);
+    } 
+    else{
+        (a=a-2);
+    }
+    cout<<a;
+    
+    //3
+    int a;
+    cout<<"A: "; cin>>a;
+    if (a>0){
+        (a+=1);
+    }
+    else if(a<0){
+        (a=a-2);
+    }
+    else{
+        (a=10);
+    }
+    cout<<a;*/
+    
+    //4
+   /* int a,b,c;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    if(a>0){
+        if(b>0){
+            if(c>0){
+                cout<<"3 positive number ";
+            }
+            else{
+                cout<<"2 positive number ";
+            }
+        }
+        else{
+            cout<<"1 positive number ";
+        }
+        
+    }
+    else{
+        cout<<"No positive number";
+    }
+    
+    else if(b>0){
+        if(a>0){
+            if(c>0){
+                cout<<"3 positive number ";
+            }
+            else{
+                cout<<"2 positive number ";
+            }
+        }
+        else{
+            cout<<"1 positive number ";
+        }
+        
+    }
+    else{
+        cout<<"No positive number";
+    }
+    
+    else{
+        if(b>0){
+            if(a>0){
+                cout<<"3 positive number ";
+            }
+            else{
+                cout<<"2 positive number ";
+            }
+        }
+        else{
+            cout<<"1 positive number ";
+        }
+        
+    }
+    else{
+        cout<<"No positive number";
+    }
+
+    //4,5
+    int a,b,c,D,E;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    D=0;
+    E=0;
+    if (a>0)
+    D=D+1;
+    else
+    E=E+1;
+    if (b>0)
+    D=D+1;
+    else
+    E=E+1;
+    if (c>0)
+    D=D+1;
+    else
+    E=E+1;
+    cout<<"Positive: "<<D<<endl<<"Negative: "<<E;
+
+    //6
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    if(a>b){
+        cout<<"A Max ";
+    }
+    else{
+        cout<<"B Max ";
+    }
+    
+    //8
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    if(a>b){
+        cout<<"A "<<a<<" B "<<b;
+    }
+    else{
+        cout<<"B "<<b<<" A "<<a;
+    }
+    
+    //9
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    if(a>b){
+        (a-=b);
+        cout<<"A<B "<<a<<endl<<b;
+    }
+    else{
+        cout<<"B>A "<<b<<endl<<a;
+    }  
+    
+    
+    //10
+    int a,b,c;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    c=a+b;
+    if(a==b){
+        cout<<" A: "<<(a=0)<<" B: "<<(b=0);
+    }
+    else{
+        cout<<" B: "<<(b=c)<<" A: "<<(a=c);
+    }
+    
+    
+    //11
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    if(a==b){
+        cout<<" A: "<<(a=0)<<" B: "<<(b=0);
+    }
+    else if(a>b) {
+        cout<<"A: "<<a<<endl<<"B: "<<b;
+    }
+    else{
+        cout<<"B: "<<b<<endl<<"A: "<<a;
+    }
+    
+    
+    //12
+    int a,b,c;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    if(a>b && b>c){
+        cout<<"C Min: "<<c;
+    }
+    else if(b>a && c>a){
+        cout<<"A Min: "<<a;
+    }
+    else{
+        cout<<"B Min: "<<b;
+    }
+    
+    
+    //13
+    int a,b,c;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    if(a>c && a>b){
+       if(c>b){
+           cout<<"Average C: "<<c;
+       }
+       else{
+           cout<<"Average B: "<<b;
+       }
+    }
+    else if(b>c && b>a){
+       if(c>a){
+           cout<<"Average C: "<<c;
+       }
+       else{
+           cout<<"Average A: "<<a;
+       }
+    }
+    else{
+       if(a>b){
+           cout<<"Average A: "<<a;
+       }
+       else{
+           cout<<"Average B: "<<b;
+       }
+    }
+    
+    
+    //15
+    int a,b,c;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    if(a<b && a<c){
+        cout<<"B: "<<b<<endl<<"C: "<<c;
+    }
+    else if(b<a && b<c){
+        cout<<"A: "<<a<<endl<<"C: "<<c;
+    }
+    else{
+        cout<<"A: "<<a<<endl<<"B: "<<b;
+    }
+    */
+    
+    //16
+    
+ 
+ 
+
+
+    
+    
+    return 0;
+}

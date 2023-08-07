@@ -1,0 +1,16 @@
+1. 1)	List yarating va unga 10 ta ism kiriting. List elementlarini Iterator orqali ekranga chiqazing.
+2)	Listning oxiriga “Xolmat” ismini kiriting
+3)	Listning birinchi elementiga O’zingizni ismingizni kiriting.
+4)	Listning 2 elementini Familiyangizga almashtiring
+5)	Listni Array ga o’giring. 
+6)	Listni ichidan ozingizni Ismingiz va Failiyangizni o’chiring (Oson)
+
+2. Butun sonlarni kiritish tartibida saqlovchi uzunligi 50 ga teng bo’lgan numbers listini yarating. Ichini 1 dan 100 gacha bo’lgan sonlarni random qilib to’ldiring. (Oson)	
+
+3. Satr berilgan. Ushbu sartdagi '$' belgilari orasidagi kalitlarni berilgan Dictionary to'plamidagi, ushbu kalitga mos qiymatlar bilan almashtiring.
+
+input: "$temp$", ["temp": "temporary"]
+output: "temporary"
+
+input: "$temp$ here comes the name $name$", dict ["temp", "temporary"] ["name", "John Doe"],
+output:  "temporary here comes the name John Doe"  (Oson)

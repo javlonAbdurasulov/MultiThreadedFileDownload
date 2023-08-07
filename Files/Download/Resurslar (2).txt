@@ -1,0 +1,5 @@
+https://dotnettutorials.net/lesson/inheritance-c-sharp/
+https://www.w3schools.com/cs/cs_inheritance.php
+https://www.geeksforgeeks.org/c-sharp-inheritance/
+https://www.tutorialspoint.com/csharp/csharp_inheritance.htm
+https://www.c-sharpcorner.com/UploadFile/0c1bb2/types-of-inheritance-in-C-Sharp/

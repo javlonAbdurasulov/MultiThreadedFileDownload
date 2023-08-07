@@ -1,0 +1,294 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    //File photo
+    //5
+    /*int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i==1 || j==1 || i==n || j==n){
+                cout<<" # ";
+            }else{
+                cout<<" * ";
+            }
+        }
+        cout<<endl;
+    }
+
+    //6
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i==1 || j==1 || i==n || j==n || i==n/2+1){
+                cout<<" # ";
+            }else{
+                cout<<" * ";
+            }
+        }
+        cout<<endl;
+    }
+    
+    //7
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i==1 || j==1 || i==n || j==n || i==n/2+1 || j==n/2+1){
+                cout<<" # ";
+            }else{
+                cout<<" 0 ";
+            }
+        }
+        cout<<endl;
+    }
+    
+    //8
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i==j){
+                cout<<" 0 ";
+            }else{
+                cout<<" * ";
+            }
+        }
+        cout<<endl;
+    }
+
+    //9
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i>=j){
+                cout<<" 0 ";
+            }else{
+                cout<<" * ";
+            }
+        }
+        cout<<endl;
+    }
+
+    //10
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i%2==j%2){
+                cout<<" 0 ";
+            }else{
+                cout<<" 1 ";
+            }
+        }
+        cout<<endl;
+    }
+
+    //11
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i==j || i+j==n+1){
+                cout<<" 0 ";
+            }else{
+                cout<<" 1 ";
+            }
+        }
+        cout<<endl;
+    }
+
+    //12
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i==1 || j==1 || i==n || j==n || i==j || i+j==n+1){
+                cout<<" 0 ";
+            }else{
+                cout<<" 1 ";
+            }
+        }
+        cout<<endl;
+    }
+    
+    //13
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            cout<<char(i+64)<<"\t";
+        }
+        cout<<endl;
+    }
+    
+    //14
+    int n,counter=1;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            cout<<counter<<"\t";
+            counter++;
+        }
+        cout<<endl;
+    }
+    
+    //15
+    int n,counter=1;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            cout<<counter<<"\t";
+            counter+=2;
+        }
+        cout<<endl;
+    }
+    
+    //16
+    int n,counter=1,sum=0;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(j==1 || j==n){
+                sum+=counter;
+            }
+            cout<<counter<<"\t";
+            counter++;
+        }
+        cout<<endl;
+    }
+    cout<<endl<<"Sum: "<<sum;
+    
+    //17
+    int n,counter=1,sum=0;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(j==1 || j==n || i==n/2+1){
+                sum+=counter;
+            }
+            cout<<counter<<"\t";
+            counter++;
+        }
+        cout<<endl;
+    }
+    cout<<endl<<"Sum: "<<sum;
+    
+    //18
+    int n,counter=1,sum=0;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(j==1 || j==n || i==n/2+1 || j==n/2+1){
+                sum+=counter;
+            }
+            cout<<counter<<"\t";
+            counter++;
+        }
+        cout<<endl;
+    }
+    cout<<endl<<"Sum: "<<sum;
+    
+    //19
+    int n,counter=1,sum=0;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i>=j){
+                sum+=counter;
+            }
+            cout<<counter<<"\t";
+            counter++;
+        }
+        cout<<endl;
+    }
+    cout<<endl<<"Sum: "<<sum;
+    
+    //20
+    int n,counter=1,sum=0;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i>=j && i+j!=n+1){
+                sum+=counter;
+            }
+            cout<<counter<<"\t";
+            counter++;
+        }
+        cout<<endl;
+    }
+    cout<<endl<<"Sum: "<<sum;
+    
+    //21
+    int n,counter=1,sum=0;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i==j || i+j==n+1){
+                sum+=counter;
+            }
+            cout<<counter<<"\t";
+            counter++;
+        }
+        cout<<endl;
+    }
+    cout<<endl<<"Sum: "<<sum;
+    
+    //22
+    int n,counter=1,sum=0;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i>=j){
+                cout<<"*";
+            }else{
+                cout<<"-";
+                }
+        }
+        cout<<endl;
+    }
+    
+    //23
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i>=j){
+            cout<<j<<"\t";
+            }
+        }
+        cout<<endl;
+    }
+    
+    //24
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(i>=j){
+            cout<<i<<"\t";
+            }
+        }
+        cout<<endl;
+    }*/
+    
+    //25
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            if(j==1 || j==n || i==j){
+                cout<<"*";
+            }else{
+                cout<<"-";
+            }
+        }
+        cout<<endl;
+    }
+    
+
+    return 0;
+}

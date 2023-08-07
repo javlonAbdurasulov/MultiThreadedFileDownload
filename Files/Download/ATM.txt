@@ -1,0 +1,819 @@
+#include <iostream>
+using namespace std;
+
+int accountNumber = 12345;
+int pinNumber = 54321;
+int balance = 100000;
+
+bool login () {
+	
+	int givenAccountNumber = -1;
+	int givenPinNumber = -1;
+	bool isAccountInvalid = true;
+	bool isPinInvalid = true;
+	
+	cout << "Welcome!" << endl;
+	
+	while (isAccountInvalid) {
+		
+		cout << "Please enter your account number: ";
+		cin >> givenAccountNumber;
+		
+		if (givenAccountNumber == accountNumber) {
+			isAccountInvalid = false;
+		} else {
+			cout << "Invalid account number! Try again." << endl;
+		}
+	}
+
+	while (isPinInvalid) {
+		
+		cout << "Enter your PIN: ";
+		cin >> givenPinNumber;
+		
+		if (givenPinNumber == pinNumber) {
+			isPinInvalid = false;
+		} else {
+			cout << "Invalid PIN number! Try again." << endl;
+		}
+
+	}
+
+	return true;
+		
+}
+
+int getUserOption () {
+
+	int selectedOption = -1;
+
+	cout << "Main menu:" << endl;
+	cout << "	1 - View my balance" << endl;
+	cout << "	2 - Withdraw cash" << endl;
+	cout << "	3 - Deposit funds" << endl;
+	cout << "	4 - Exit" << endl;
+	cout << "Enter a choice: " << endl;
+	cin >> selectedOption;
+	
+	return selectedOption;
+	
+}
+
+void viewBalance () {
+
+	cout << "You have:" << endl;
+	cout << "$" << balance << endl;
+
+}
+
+void withdrawCash() {
+	
+	int selectedOption = -1;
+	int valueToWithdraw = 0;
+	bool isNotFinished = true;
+
+	do {
+		
+		cout << "Withdrawal options:" << endl;
+		cout << "1 - $20" << endl;
+		cout << "2 - $40" << endl;
+		cout << "3 - $60" << endl;
+		cout << "4 - $100" << endl;
+		cout << "5 - $200" << endl;
+		cout << "6 - cancel transaction" << endl;
+		cout << "choose a withdrawal option (1-6)" << endl;
+
+		cin >> selectedOption;
+		switch (selectedOption) {
+			case 1:
+				valueToWithdraw = 20;
+				break;
+			case 2:
+				valueToWithdraw = 40;
+				break;
+			case 3:
+				valueToWithdraw = 60;
+				break;
+			case 4:
+				valueToWithdraw = 100;
+				break;
+			case 5:
+				valueToWithdraw = 200;
+				break;
+			case 6:
+				isNotFinished = false;
+				break;
+			default:
+				cout << "Invalid option! Try again." << endl;
+				break;
+		} 
+		
+		if (valueToWithdraw != 0) {
+			if (valueToWithdraw > balance) {
+				cout << "You just have $" << balance << ". You can't withdraw $" << valueToWithdraw << endl;
+			} else {
+				balance = balance - valueToWithdraw;
+				isNotFinished = false;
+			}
+			valueToWithdraw = 0;
+		}
+
+	} while (isNotFinished);	
+
+}
+
+void depositFunds() {
+
+	int selectedOption = -1;	
+	bool isNotFinished = true;
+
+	do {
+		
+		cout << "Deposit options:" << endl;
+		cout << "1 - $20" << endl;
+		cout << "2 - $40" << endl;	
+		cout << "3 - $60" << endl;
+		cout << "4 - $100" << endl;
+		cout << "5 - $200" << endl;
+		cout << "6 - cancel transaction" << endl;
+		cout << "choose a deposit option (1-6)" << endl;
+
+		cin >> selectedOption;
+		switch (selectedOption) {
+			case 1:
+				balance = balance + 20;
+				isNotFinished = false;
+				break;
+			case 2:
+				balance = balance + 40;
+				isNotFinished = false;
+				break;
+			case 3:
+				balance = balance + 60;
+				isNotFinished = false;
+				break;
+			case 4:
+				balance = balance + 100;
+				isNotFinished = false;
+				break;
+			case 5:
+				balance = balance + 200;
+				isNotFinished = false;	
+				break;
+			case 6:
+				isNotFinished = false;
+				break;
+			default:
+				cout << "Invalid option! Try again." << endl;
+				break;
+		} 
+		
+	} while (isNotFinished);
+
+}
+
+int main () {
+				
+	if (login()) {
+		
+		int isNotFinished = true;
+
+		do {
+			
+			switch (getUserOption()) {
+				case 1:
+					viewBalance();
+					break;
+				case 2:
+					withdrawCash();
+					break;
+				case 3:
+					depositFunds();
+					break;
+				case 4:
+					isNotFinished = false;
+					break;
+				default:
+					cout << "Invalid option! Try again." << endl;
+					break;
+			}
+
+		} while (isNotFinished);
+
+	}
+
+	return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//2 ATM
+
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    
+    int pass=9909,password,back,main_choice,Balans=10000000,attempts=3;
+
+    cout<<"Enter password:";cin>>password;
+  metkapassword  :
+    if (password==9909){
+        metka_chek_password:
+        cout<<"1: Check balans\n"<<"2: Cash withdrawal\n"<<"3: Connect sms notification \n"<<"4- Change password "<<endl;
+        cout<<"5: Back\n"<<"6: Leave the offer\n";
+        cout<<"Choose one of them: ";cin>>main_choice;
+    if (main_choice>0 && main_choice<7){
+    switch(main_choice){
+    case 1 :{
+cout<<"\t\t Check Balans "<<endl;
+    cout<<"You have "<<Balans<<" USD in your balans "<<endl;
+    cout<<"2: come back "<<endl;
+    cin>>back;
+if(back==2){
+    goto metkapassword;
+}
+else {
+        cout<<"Wrong button ";
+        main();
+    return 0;
+}
+}
+break;
+    case 2 :{
+    metkacash:
+cout<<"\tCash withdrawal \n";
+cout<<"1: 500000\t"<<"2: 1000000\n "<<"3: 1500000 "<<"4: 2000000\n"<<"5: 3000000\t"<<"6: 4000000\n";
+cout<<"\t\t 7: Another button\n"<<"8: Back\n";
+int buttonforcash;
+cout<<"Select the desired button :";cin>>buttonforcash;
+switch(buttonforcash){
+
+case 1 :{
+if (Balans>=500000){
+    cout<<"Issued 500000 "<<endl;
+    cout<<"Left in your balance "<<(Balans-500000)<<endl;
+        cout<<"2: come back"<<endl;
+    cin>>back;
+    if(back==2){
+    goto  metkacash;
+}
+else {
+        cout<<"Wrong button "<<endl;
+    return 0;
+}
+}
+else {
+    cout<<"There is not enough money in your balance \n";
+    cout<<"Choose another cash ";
+    goto metkacash;
+}
+}
+break;
+case 2 :{
+if (Balans>=1000000){
+   cout<<"Issued $100 "<<endl;
+    cout<<"Left in your balance "<<(Balans-1000000)<<endl;
+        cout<<"2: come back"<<endl;
+    cin>>back;
+    if(back==2){
+    goto  metkacash;
+}
+else {
+        cout<<"Wrong button "<<endl;
+    return 0;
+}}
+else
+{
+    cout<<"There is not enough money in your balance \n";
+    cout<<"Choose another cash ";
+    goto metkacash;
+}
+}
+break;
+case 3 :{
+    if (Balans>=1500000){
+   cout<<"Issued 1500000 "<<endl;
+    cout<<"Left in your balance "<<(Balans-1500000)<<endl;
+        cout<<"2: come back"<<endl;
+    cin>>back;
+    if(back==2){
+    goto  metkacash;
+}
+else {
+        cout<<"Wrong button "<<endl;
+    return 0;
+}
+}
+else
+{
+    cout<<"There is not enough money in your balance \n";
+    cout<<"Choose another cash ";
+    goto metkacash;
+}
+}
+break;
+case 4 :{
+      if (Balans>=2000000){
+   cout<<"Issued 2000000 "<<endl;
+    cout<<"Left in your balance "<<(Balans-2000000)<<endl;
+        cout<<"2: come back"<<endl;
+    cin>>back;
+    if(back==2){
+    goto  metkacash;
+}
+else {
+        cout<<"Wrong button "<<endl;
+    return 0;
+}
+}
+else
+{
+    cout<<"There is not enough money in your balance \n";
+    cout<<"Choose another cash ";
+    goto metkacash;
+}
+
+}
+break;
+case 5 :{
+      if (Balans>=3000000){
+   cout<<"Issued 3000000 "<<endl;
+    cout<<"Left in your balance "<<(Balans-3000000)<<endl;
+        cout<<"2: come back"<<endl;
+    cin>>back;
+    if(back==2){
+    goto  metkacash;
+}
+else {
+        cout<<"Wrong button "<<endl;
+    return 0;
+}
+}
+else
+{
+    cout<<"There is not enough money in your balance \n";
+    cout<<"Choose another cash ";
+    goto metkacash;
+}
+
+}
+break;
+case 6 :{
+if (Balans>=4000000){
+   cout<<"Issued 4000000 "<<endl;
+    cout<<"Left in your balance "<<(Balans-4000000)<<endl;
+        cout<<"2: come back"<<endl;
+        cin>>back;
+    if(back==2){
+    goto  metkacash;
+}
+else {
+        cout<<"Wrong button "<<endl;
+    return 0;
+}
+}
+else
+{
+    cout<<"There is not enough money in your balance \n";
+    cout<<"Choose another cash ";
+    goto metkacash;
+}
+
+}
+break;
+case 7 :{
+
+
+int another_cash;
+cout<<"Enter the required amount you need: ";cin>>another_cash;
+    if (another_cash<=Balans){
+   cout<<"Issued "<<another_cash<<endl;
+    cout<<"Left in your balance "<<(Balans-another_cash)<<endl;
+    cout<<"2: come back"<<endl;
+    cin>>back;
+    if(back==2){
+    goto  metkacash;
+}
+else {
+        cout<<"Wrong button ";
+    return 0;
+}
+}
+else
+{
+    cout<<"There is not enough money in your balance \n";
+    cout<<"Choose another cash ";
+    goto metkacash;
+}
+}
+break;
+case 8:{
+goto metkapassword;
+}break;
+default :{
+        cout<<"Wrong button "<<endl;
+      cout<<"Select again"<<endl;
+        goto metkacash;
+    }
+  break;
+}
+
+}
+break;
+case 3 :{
+    metkasms:
+    int number_of_button;
+cout<<"\t\t SMS notification connection"<<endl;
+cout<<"1- Delete SMS notification \n"<<"2- Connection SMS notification \n"<<"3- Back\n";
+cout<<"Click on button to choose :";cin>>number_of_button;
+bool sms_notification;
+switch(number_of_button){
+
+case 1 : {system("cls");
+if (sms_notification==true){
+    cout<<"Stopped sms informing"<<endl;
+    sms_notification=false;
+    goto metkasms;
+    }
+else {
+      cout<<"Sms informing not connected"<<endl;
+      goto metkasms;}
+}
+break;
+case 2 :{
+if(sms_notification==false){
+cout<<"Started sms informing\n";
+sms_notification=true;
+goto metkasms;
+}
+else {
+    cout<<"Sms informing connected"<<endl;
+    goto metkasms;
+}
+}
+break;
+case 3 :{
+    goto metkapassword;
+}
+break;
+default :{
+cout<<"Wrong button ";
+goto metkasms;
+}
+}
+
+}
+break;
+case 4 :{
+    metkadifpassword:
+    int button_for_sms;
+      cout<<"\t\t Change password"<<endl;
+      cout<<"1- Change password\n"<<"2- Back \n";
+      cout<<"Click on button :";cin>>button_for_sms;
+      switch(button_for_sms){
+   case 1 :{
+   int new_password,oldpass,confirm_pass;
+    cout<<"Enter old password:";cin>>oldpass;
+    if(oldpass==pass){
+                
+                cout<<"New password: "; cin>>new_password;
+       cout<<"Confirm password: "; cin>>confirm_pass;
+   if (confirm_pass==new_password){
+
+  
+cout<<"Your password has been changed "<<endl;
+cout<<"Want to perform another operation?"<<endl;;
+cout<<"1: Yes \n 2: No"<<endl;
+int button_pass;
+cout<<"Click on button :";cin>>button_pass;
+if (button_pass==1){
+    goto metkapassword;
+}
+else {
+        cout<<"Take a card "<<endl;
+    return 0;
+}
+   }
+ 
+  
+  else {cout<<"You enter wrong confirm password! "<<endl;
+    
+    goto metkacash;
+  }
+   }
+   else {
+cout<<"Wrong,it's not your old password\n";
+goto metkadifpassword;
+   }
+}
+break;
+   case 2 :{
+    goto metkapassword;
+    }
+break;
+   default :{
+break;
+   cout<<"Wrong button"<<endl;
+   goto metkadifpassword;
+   }
+
+
+}}}}}
+return 0;
+}
+
+
+
+//3
+#include <iostream>
+#include <ctime>
+using namespace std;
+//using namespace Bankomat::Bank;
+ 
+namespace Bankomat
+{
+        namespace Account 
+    {
+        class account
+        {
+        public:
+            account();
+            char password [5];
+            char user_account [13];
+            long money;
+            void Open_account ();
+            void Show_info ();
+            long &Work_with_money (int m);
+            bool Enter_to_your_account ();
+ 
+        private:
+ 
+        };
+ 
+         void account :: Open_account ()
+            {
+            int k;
+            srand(time(0));
+            for (int i=0; i<12; i++)
+            {
+                user_account[i]= rand()%10 + 48;
+            }
+            user_account[12]='\0';
+            cout <<"Your account "<< user_account<<endl;
+ 
+            k = rand () %10000;
+            int(k, password, 10);
+            password[4]='\0';
+            cout <<"Your new password "<< password<<endl;
+            
+            cout << "The summ of money you put in your account?" <<endl;
+            cin >> money;
+ 
+            }
+ 
+          void account :: Show_info ()
+          {
+          cout <<"Your account "<< user_account<<endl;
+          cout <<"Your money "<< money<<endl;
+          }
+ 
+          long & account ::  Work_with_money (int m=0)
+           {
+               money -=m;
+               return money;
+           }
+ 
+        account::account()
+        {
+            cout << "You open new account"<<endl;
+ 
+        }
+ 
+        bool account::Enter_to_your_account()
+        {
+        char tries [5];
+        int times=0;
+        cout << "Enter your password if you want to use your account"<<endl;
+        
+        while (times<3)
+        {
+            cin >> tries;
+ 
+        if (strcmp (tries, password) == 0) 
+        {
+            cout << "Welcome in your account"<<endl;
+            return 1;
+        }
+        else 
+            cout <<"Error try again"<<endl;
+        times++;
+        }
+ 
+        if (times == 3)
+            cout << "Error you try to enter your password 3 times, your account if blocked "<<endl;
+        return 0;
+    }
+    }
+ 
+            namespace Client
+    {
+        using namespace Account;
+ 
+        class client
+        {
+        public:
+            account *New;
+            char fio [50];
+            char adress [50];
+            client();
+            ~client ();
+ 
+        
+            
+        };
+ 
+        client::client()
+        {
+            New = new account;
+            cout << "Enter your Name and Surname"<<endl;
+            cin.getline(fio, 50);
+            cout << "Enter your adress"<<endl;
+            cin.getline (adress, 50);
+        }
+ 
+        client::~client()
+        {
+            delete New;
+        }
+        
+    }
+ 
+    namespace Bank
+    {
+        using namespace Client;
+ 
+        class bank
+        {
+        public:
+            Client::client *User;
+            bank();
+            ~bank();
+            void Menu ();
+        //private:  
+        };
+        bank:: bank ()
+        {
+            User = new client; 
+            User->New->Open_account();          
+        }
+        bank:: ~bank ()
+        {
+            delete User; 
+        }
+        void bank :: Menu()
+        {
+            _sleep (1000);
+            int key;
+            
+            while (1)
+            {
+                bool OK = 1;
+                system ("CLS");
+        cout << "Choose what you want to do?"<<endl;
+        cout << "1: Show the balance?"<<endl << "2: To put money to your account? "<<endl<< "3: To draw money from your account? "<<endl << "4: Exit; "<<endl;
+        cin >> key;
+        while ((key <0) || (key >=5))
+        cin >> key;
+ 
+        switch (key)
+        {
+        case 1: 
+        
+            system ("CLS");
+            User->New->Show_info();
+            cout << "Do you want to back to menu? \t 1: Menu;\t2: Exit"<<endl;
+            while (OK)
+            {
+            cin >> key;
+            if (key ==1) {
+                OK =0;
+                continue;
+            }
+            else if (key == 2) 
+            {
+                cout << "Have a nice day"<<endl;
+                exit (0);
+            }
+            else 
+            cout << "Error/ Try again"<<endl;
+            }
+            break;
+        case 2:
+            cout << "How much money you want to put? "<<endl;
+            cin >> key;
+            User->New->Work_with_money(-key);
+            cout << "Now you have  "<< User->New->Work_with_money() << "  in your account"<<endl;
+            cout << "Do you want to back to menu? \t 1: Menu;\t2: Exit"<<endl;
+            while (OK)
+            {
+            cin >> key;
+            
+                if (key ==1) {
+                OK =0;
+                continue;
+            }
+            else if (key == 2) 
+            {
+                cout << "Have a nice day"<<endl;
+                exit (0);
+            }
+            else 
+            cout << "Error/ Try again"<<endl;
+            }
+            break;
+        case 3: 
+            cout << "How much money you want to draw? "<<endl;
+            cin >> key;
+            if (User->New->Work_with_money() < key)
+                {
+                    cout << "You don't have anough money to draw it"<<endl;
+                    _sleep(1000);
+                    continue;
+            }
+            else User->New->Work_with_money(key);
+            cout << "Now you have  "<< User->New->Work_with_money() << "  in your account"<<endl;
+            cout << "Do you want to back to menu? \t 1: Menu;\t2: Exit"<<endl;
+            while (OK)
+            {
+            cin >> key;
+            if (key ==1) {
+                OK =0;
+                continue;
+            }
+            else if (key == 2) 
+            {
+                cout << "Have a nice day"<<endl;
+                exit (0);
+            }
+            else 
+            cout << "Error/ Try again"<<endl;
+            }
+            break;
+        case 4: 
+            cout << "Have a nice day"<<endl;
+            exit (0);
+            break;
+        }
+        }
+        }
+    }
+}
+ 
+ 
+void main ()
+{
+    system("CLS");
+    Bankomat::Bank::bank Bank_A;
+    if (Bank_A.User->New->Enter_to_your_account())
+    Bank_A.Menu();
+    
+ 
+}

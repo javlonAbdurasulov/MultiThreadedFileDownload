@@ -1,0 +1,128 @@
+//Abdurasulov Javlon
+//Bilet raqami --- A270123F5111
+
+//1 misol
+
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+using namespace std;
+int main() {
+    int n;
+    cout<<"sekund kiriting: ";
+    cin>>n;
+    cout<<n/3600<<" soat "<<n%3600/60<<" minut";
+    return 0;
+}
+
+// 2 misol
+
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+using namespace std;
+int main() {
+    int n,r1,r10,r100;
+    cout<<"3 xonali son kiriting: ";
+    cin>>n;
+    r1=n%10;
+    r10=n/10%10;
+    r100=n/100%10;
+    int maxx=r1;
+    if(r10>maxx){
+        maxx=r10;
+    }
+    if(r100>maxx){
+        maxx=r100;
+    }
+    cout<<" son orasidagi eng katta raqam = "<<maxx;
+    return 0;
+}
+
+//3 misol
+
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+using namespace std;
+int main() {
+    int r1,r100;
+    cout<<"3 xonali sonlar orasidan barcha 100 va 1 xonalarida 3 soni ishtirok etgan sonlar \n ";
+    for(int i=100;i<=999;i++){
+        r1=i%10;
+        r100=i/100%10;
+        if(r1==3 && r100==3){
+            cout<<i<<" ";
+        }
+    }
+    return 0;
+}
+
+
+//4 misol
+
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+using namespace std;
+int main() {
+    int n;
+    cout<<"N sonini kiriting: ";
+    cin>>n;
+    int number=n;
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 0; j < i; ++j) {
+            cout<<number<<" ";
+        }cout<<endl;number--;
+    }
+    return 0;
+}
+
+//5 misol
+
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+using namespace std;
+int main() {
+    float n;
+    cout<<"N sonini kiriting: ";
+    cin>>n;
+    cout<<n<<" sonining kvadrat ildizi: "<<sqrt(n)<<endl;
+    cout<<n<<" sonining kub ildizi: "<<cbrt(n)<<endl;
+    return 0;
+}
+
+
+//6 misol
+
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+using namespace std;
+int main() {
+    string str;
+    int upper=0,lower=0;
+    cout<<"satr kiriting: ";
+    getline(cin,str);
+    for(int i=0;i<str.size();i++){
+        if(isupper(str[i])){
+            upper++;
+        }else if(islower(str[i])){
+            lower++;
+        }
+    }
+    if(upper>lower){
+        cout<<" PDP ";
+    }else{
+        cout<<" ACADEMY ";
+    }
+    return 0;
+}
+
+
+
+
+
+
+

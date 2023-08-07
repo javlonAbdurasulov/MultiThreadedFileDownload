@@ -1,0 +1,20 @@
+1. Quyidagi amallarni bajarib natijasini qaytaruvchi methodlarga ega bo'lgan AddAttributes klassini polymorphismni overloading usulini qo’llagan holda yarating:
+1)	int  toifali 2 ta sonlarni qo’shish; 
+2)	int va double toifali 2 ta sonni qo’shish;
+3)	3ta double toifali sonlarni qo’shish;
+4)	Ikkita mattni qo’shish;
+5)	Son va matni qo’shish. (oson)
+
+2. Quyidagi amallarni bajaruvchi static methodlari bor bo’lgan Calculator classini polymorphismni overloading usulini qo’llagan holda yarating. 
+1) istalgan toifadagi ikkita sonni yig'indisini qaytaradigan (add) methodi. 
+2) istalgan toifadagi ikkita sonni ayirmasini qaytaradigan (sub) methodi. 
+3) istalgan toifadagi ikkita sonni ko’paytmasini qaytaradigan (multiply) methodi. 
+4) istalgan toifadagi ikkita sonni bo’linmasini qaytaradigan (div) methodi. 
+5) istalgan toifadagi bitta sonning absolyut qiymatini qaytaradigan (abs) methodi.
+6) istalgan toifadagi bitta sonning kvadrat qiymatini qaytaradigan (pow) methodi (qiyin)
+
+3. Rasmda berilgan struktura asosida klasslarni yarating. display() methodini overriding usulida amalga oshiring. (oson)
+
+4. Rasmda berilgan struktura asosida klasslarni yarating. sound() methodini overriding usulida amalga oshiring. Barcha hayvonlarning o'ziga xos parametrlarini klass fieldi sifatida bering. (oson)
+
+5. Rasmda berilgan struktura asosida klasslarni yarating. area() va perimeter() methodlarini overriding usulida amalga oshiring. (oson)

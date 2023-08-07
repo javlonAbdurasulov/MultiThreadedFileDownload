@@ -1,0 +1,10 @@
+1. Berilgan path ga mos papka ichida nimalar borligini aniqlaydigan method tuzing.
+Method javob sifatida agar path ichida faqat papkalar bo'lsa "Papkalar bor" yozuvi, faqat fayllar bo'lsa "Fayllar bor" yozuvi, papka va fayllar bor bo'lsa "Papka va fayllar bor" yozuvi, aks holda "Papka bo'sh" yozuvi chiqsin. (Oson)
+
+2. Berilgan matnli fayl ichida nechta qator borligini topuvchi dastur tuzing. (Oson)
+
+3. Berilgan fayl(ixtiyoriy formatdagi)dan nusxa oluvchi dastur tuzing. (Oson)
+
+4. Ikkita matnli fayl  ichidagilarni birlashtirib uchunchi faylga yozadigan dastur tuzing (Oson)
+
+5. Berilgan papka ichidagi file va papkalarni nomida qidirilayotgan matn bor bo’lgan fayl va papkalarni ekranga chiqazish dasturini tuzing. Bunda berilgan papka ichida papkalar bor bo’lsa ularni ichidan ham qidirish kerak (Rekursiyadan foydalaniladi). (Qiyin)

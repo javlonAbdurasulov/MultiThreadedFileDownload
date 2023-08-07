@@ -1,0 +1,202 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+    //1
+   int n,counter=0;
+   float sum;
+   cout<<"Enter number: "; cin>>n;
+    if(n<=9999){
+    while(n>0){
+
+        sum+=n%10;
+            n/=10;
+            counter++;
+        }}
+    cout<<"Arifmetic mean "<<sum/counter;
+
+     return 0;}
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+
+      //2
+    int a,b,c;
+    cout<<"Enter number a: "; cin>>a;
+    cout<<"Enter number b: "; cin>>b;
+    cout<<"Enter number c: "; cin>>c;
+    if(abs(a-b)==10 || abs(b-c)==10 || abs(a-c)==10){
+        cout<<"Multiplication= "<<a*b*c;
+    }else{
+        cout<<"Sum= "<<a+b+c;
+    }
+     
+     return 0;}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+	//3
+	int r1,r10,r100,counter=0;
+        for(int i=1; i<=999; i++){
+        if(i%10==5 || i/10%10==5 || i/100%10==5){
+            cout<<i<<" ";
+            counter++;
+         }
+        }
+    	cout<<endl;
+    	cout<<"Amoun of number: "<<counter;
+
+return 0;}
+
+
+#include <iostream>
+using namespace std;
+int main() {
+
+	//4
+    int counterupper=0, counterlower=0, counterdigit=0;
+    string word;
+    cout<<"Enter word: ";
+    getline(cin,word);
+    for(int i=0; i<word.size(); i++){
+        if(isupper(word[i])){
+            counterupper++;
+        }
+        if(islower(word[i])){
+            counterlower++;
+        }
+        if(isdigit(word[i])){
+            counterdigit++;
+        }
+    }
+    cout<<"Upper- "<<counterupper<<" ";
+    cout<<"Lower- "<<counterlower<<" ";
+    cout<<"Digit- "<<counterdigit;
+return 0;}
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+
+ //5
+    int n;
+    cout<<"Enter n: "; cin>>n;
+    for(int i=1; i<=n; i++){
+        for (int j = 1; j<=n; j++){
+            if(j==1 || j==n || i==j){
+                cout<<"N";
+            }else{
+                cout<<" ";
+            }
+        }cout<<endl<<" ";
+    }
+
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+
+//6
+    int N,Hour,Minute,Second;
+    cout<<"Second: "; cin>>N;
+    Hour=N/3600;
+    Minute=N/60%60;
+    Second=N%3600%60;
+    cout<<Hour<<" Hour "<<Minute<<" Minute "<<Second<<" Second ";
+
+    return 0;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+//7
+    int num,counter=0,n;
+    cout<<"Enter number: "; cin>>num;
+    for(int i=1; i<=num;){
+        n=num/i*1%10;
+        if(n==5){
+            counter++;
+        }
+        i*=10;
+    }
+    cout<<"Amount of 5: "<<counter;
+return 0;}
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+
+//8
+    int sum=0,r1,r10,counter=0;
+    for (int i = 10; i < 100; ++i) {
+        r1=i%10;
+        r10=i/10%10;
+        if(r1+r10>3 && r1+r10<7){
+            cout<<i<<" ";
+            counter++;
+            sum+=i;
+        }
+    }
+    cout<<"Sum: "<<sum<<endl<<"Amount of counters: "<<counter;
+return 0;}
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+//9
+    int counter=0;
+    string str;
+    cout<<"Input: ";
+    getline(cin,str);
+    for (int i = 0; i <str.size(); ++i) {
+        if(isupper(str[i])==1){
+            str[i]= (char)tolower(str[i]);
+        }else if(isdigit(str[i])){
+            str[i]='*';
+        }
+    }
+    cout<<"Output: "<<str;
+return 0;}
+
+
+
+
+//10
+    int n;
+    cout<<"Enter n: "; cin>>n;
+    for(int i=1; i<=n; i++){
+        for (int j = 1; j<=n; j++){
+            if(i==1 || i==n || i+j==n+1){
+                cout<<"Z";
+            }else{
+                cout<<" ";
+            }
+        }cout<<endl<<" ";
+    }
+retun 0;}

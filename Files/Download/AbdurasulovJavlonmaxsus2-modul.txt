@@ -1,0 +1,179 @@
+                      //Abdurasulov Javlon maxsus 2 - modul
+                     // bilet raqami :  B280123FSIN17
+
+
+
+// 1 misol
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    int n;
+    cout<<"n son kiriting: ";
+    cin>>n;
+    cout<<"1 dan n gacha kub ildizlari\n";
+    for(int i=1;i<=n;i++){
+        cout<<i<<" sonini kub ildizi "<<cbrt(i)<<endl;
+    }
+    return 0;
+}
+
+
+
+// 2 misol
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    int n,sum=0;
+    cout<<"n son kiriting: ";
+    cin>>n;
+
+    for(int i=1;i<=n/2;i++){
+        if(n%i==0){
+            sum+=i;
+        }
+    }
+    if(sum==n){
+        cout<<n<<" mukammal son";
+    }else{
+        cout<<n<<" mukammal son emas";
+    }
+    return 0;
+}
+
+
+
+
+// 3 misol
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    int n,counter=0;
+    cout<<"massiv razmeri: ";
+    cin>>n;
+    int array[n];
+    cout<<"massivga "<<n<<" son kiritng: \n";
+    for(int i=0;i<n;i++){
+        cin>>array[i];
+    }
+    cout<<"  array[0] dan kichik sonlar: \n";
+    for (int i = 1; i < n; ++i) {
+        if(array[0]>array[i]){
+            cout<<array[i]<<" ";
+            counter++;
+        }
+    }
+    if(counter==0){
+        cout<<0<<" bunday sonlar yo'q";
+    }
+    return 0;
+}
+
+
+
+// 4 misol
+
+
+#include <iostream>
+#include <math.h>
+#include <ctime>
+using namespace std;
+int main() {
+    srand(time(0));
+    int n,juft=0,toq=0;
+    cout<<"N x N razmer massivga bering: ";
+    cin>>n;
+    int array[n][n];
+    cout<<"Massiv: \n";
+    for(int i=0;i<n;i++){
+        for (int j = 0; j < n; ++j) {
+            array[i][j]=rand()%10+1;
+            cout<<array[i][j]<<" \t";
+            if(array[i][j]%2==0){
+                juft++;
+            }else{
+                toq++;
+            }
+        }cout<<endl;
+    }
+    cout<<"juft sonlar: "<<juft<<" ta\n";
+    cout<<"toq sonlar: "<<toq<<" ta\n";
+    return 0;
+}
+
+
+
+
+// 5 misol
+
+
+#include <iostream>
+#include <math.h>
+#include <ctime>
+using namespace std;
+int summa(int,int);
+int summa(int n,int counter){
+
+    n=counter%10;
+
+    if(counter>0){
+        counter/=10;
+        return n+summa(n,counter);
+    }else{
+        return 0;
+    }
+
+}
+
+int main() {
+    int n,counter=0;
+    cout<<"n butun son kiriting: ";
+    cin>>n;
+    counter=n;
+    cout<<"n sonlar yig'indizi: ";
+    cout<<summa(n,counter);
+    return 0;
+}
+
+
+
+
+
+// 6 misol
+
+
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+#include <ctime>
+using namespace std;
+int satr(int counter,string str){
+    for(int i=0;i<str.size();i++){
+        if(isdigit(str[i]) && str[i]=='5'){
+            counter++;
+        }
+    }
+    return counter;
+}
+
+int main() {
+    string str;
+    int counter=0;
+    cout<<"satr kiriting : ";
+    getline(cin,str);
+    cout<<"ushbu satrda ";
+    cout<<satr(counter,str);
+    cout<<" ta  5 soni ishtirok etgan";
+    return 0;
+}
+
+
+

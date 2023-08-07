@@ -1,0 +1,213 @@
+1 Masala 
+#include <iostream>
+using namespace std;
+int main() {
+int a,b;
+cout<<"Enter a:";cin>>a;
+cout<<"Enter b:";cin>>b;
+a=a+b;
+b=a-b;
+a=a-b;
+cout<<"a ="<<a<<endl;
+cout<<"b ="<<b;
+    return 0;
+}
+
+
+
+2 Masala 
+#include <iostream>
+using namespace std;
+int main() {
+    int D;
+    float M, A = 80.0 / 9.50;
+    cout << "Enter distance from A to B: ";cin >> D;
+    cout << "Amount of oil: ";cin >> M;
+    if (A * M >= D){
+        cout << "Enough and " << (A * M - D) / 80.0 << " % gasoline will remain in the tank: ";
+    }else{
+        cout << "Not enough and " << (D - A * M) / 80.0 << " % gasoline is needed to reach the city: ";
+    }
+    return 0;
+}
+
+3 Masala
+
+
+
+4 Masala
+
+#include <iostream>
+using namespace std;
+int main(){
+float C,kg;
+cout<<"Enter weight of candy price :";cin>>C;
+cout<<"Enter kg :";cin>>kg;
+    for (int i = 0; i <= kg*10; i++) {
+        cout<<i*100<<"Cost of gramm: "<<C*(i/10.0)<<endl;
+    }
+    return 0;
+}
+
+
+5 Masala
+
+#include <iostream>
+using namespace std;
+int main(){
+    int num,sum=0;
+    cout<<"Enter number :";cin>>n;
+    while(num>0){
+        if(num%2==0){
+            sum+=num;
+        }
+        cout<<"Enter Num :";cin>>num;
+    }
+    cout<<"Sum :"<<sum;
+    return 0;
+}
+6 Masala
+
+#include <iostream>
+using namespace std;
+int main(){
+  int a;
+    cin >> a;
+    for (int i = 1; i <= a; i++) {
+        for (int j = 1,k=i; j <= a; j++,k--) {
+            if (i >= j) {
+                cout <<k;
+            } else {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+7 Masala
+#include <iostream>
+using namespace std;
+int main(){
+    string result;
+    int count=0,count1;
+    cout<<"Enter word:";
+    getline(cin,result);
+    for (int i = 0; i < result.size(); ++i) {
+        if(isalpha(result[i])){
+            count++;
+        }
+        else if (isdigit(result[i])){
+            count1++;
+        }
+    }
+    if(count>count1){
+        for (int i = 0; i < result.size(); ++i) {
+            if(isdigit(result[i])){
+                result[i]='#';
+            }
+        }
+    }
+    else{
+        for (int i = 0; i < result.size(); ++i) {
+            if(isalpha(result[i])){
+                result[i]='#';
+            }
+        }
+    }
+    cout<<"Result: "<<result;
+    return 0;
+}
+
+8 Masala
+
+#include <iostream>
+using namespace std;  
+      float findArifmeticMean(int n){
+    int arr[n],N,Min=INT_MAX,Max=INT_MIN;
+    for (int i = 0; i < n ; i++) {
+        cout<<"Enter "<<i+1<<" element: ";  cin>>N;
+        arr[i]=N;
+    }
+    for (int i = 0; i < n; i++) {
+        if(arr[i]<Min){
+            Min=arr[i];
+        }
+        if(arr[i]>Max){
+            Max=arr[i];
+        }
+    }
+    return ((Max+Min)/2.f);
+}
+int main(){
+    int num;
+    cout<<"Enter n :";cin>>num;
+    cout<<"Result: "<<findArifmeticMean(num);
+    return 0;
+}
+ 
+
+9 Masala
+
+
+10 Masala
+
+11 Masala
+
+12 Masala
+
+13 Masala
+ 
+
+14 Masala
+
+#include <iostream>
+using namespace std;
+string DELETE(string str,int n){
+    string S="";
+    S.append(str,0,n);
+    return S;
+}
+string DELETE(string str,int n1,int n2){
+    string S1="";
+    S1.append(str,0,n1);
+    S1.append(str,n1+n2);
+    return S1;
+}
+string DELETE(string str){
+    string S2="";
+    return S2;
+}
+int main() {
+    cout<<DELETE("Uzbekistan")<<endl;
+    cout<<DELETE("Uzbekistan",3)<<endl;
+    cout<<DELETE("Uzbekistan",2,3)<<endl;
+    return 0;
+}
+
+
+15 Masala
+
+#include <iostream>
+using namespace std;
+string addString(string str1,string str2,int n1,int n2){
+    string result="";
+    result.append(str1,0,n1);
+    result.append(str2,str2.size()-n2);
+result.append(str1,result.size()-n1);
+    return result;
+}
+int main(){
+    string word1,word2;
+    int N1,N2;
+    cout<<"Write word1: ";
+    getline(cin,word1);
+    cout<<"Write word2: ";
+    getline(cin,word2);
+    cout<<"Enter n1: ";cin>>N1;
+    cout<<"Enter n2: ";cin>>N2;
+    cout<<"Result: "<<addString(word1,word2,N1,N2);
+    return 0;
+}

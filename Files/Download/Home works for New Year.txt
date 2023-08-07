@@ -1,0 +1,702 @@
+Chiziqli algoritm
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+    
+    //1
+   int a;
+   cout<<"A: "; cin>>a;
+   cout<<"Second: "<<a*60<<endl;
+   
+   //2
+   int a;
+   cout<<"A: "; cin>>a;
+   cout<<"hour: "<<a/3600<<endl;
+   
+   //3
+   int a;    // 1gb=1024*1024=1048576Kb
+   cout<<"A: "; cin>>a;
+   cout<<"How many musics can combine into oneself: "<<(a*1024*1024)/245<<endl;
+   
+   //4
+   int a,b; 
+   cout<<"A: "; cin>>a;
+   b=5*1024*1024;
+   cout<<"How many film can combine into oneself: "<<(b/a);
+   
+   //5 
+   int a,b;
+   cout<<"Minut: "; cin>>a;
+   cout<<"Second: "; cin>>b;
+   cout<<a*60+b;
+   
+   //6
+   int a,b,c;
+   cout<<"hour: "; cin>>a;
+   cout<<"minute: "; cin>>b;
+   cout<<"second: "; cin>>c;
+   cout<<a*3600+b*60+c;
+   
+   //7
+   int a,b,c;
+   cout<<"hour: "; cin>>a;
+   cout<<"minute: "; cin>>b;
+   cout<<"second: "; cin>>c;
+   cout<<a*60+b+c/60;
+   
+   //8
+   int a,b,c;
+   cout<<"Km: "; cin>>a;
+   cout<<"Dm: "; cin>>b;
+   cout<<"Sm: "; cin>>c;
+   cout<<"Metr: "<<a/1000+b*10+c*100;
+   
+   //9
+   int d,a;
+   cout<<"Gramm: "; cin>>d;
+   cout<<"Kilogramm: "; cin>>a;
+   cout<<"Tonna: "<<d/1000000+a/1000;
+   
+   //10
+   float a,s;
+   cout<<"Speed a Dm per minute: "; cin>>a; //1 km=100dm   60 minute = 1 hour
+   cout<<"Km: "; cin>>s;
+   cout<<"how many hours will it take to cover the distance: "<<s/(a/10000*60); 
+   
+   return 0;
+}
+
+
+
+
+Assosiy operatorlar1
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //1
+    int L;
+    cout<<"Sm: "; cin>>L;
+    cout<<"Metr: "<<L/100;
+    
+    //2
+    int M;
+    cout<<"Kg: "; cin>>M;
+    cout<<"Tonna: "<<M/1000;
+    
+    //3
+    int a;
+    cout<<"Size of the file on bayt: "; cin>>a;
+    cout<<a/1024;
+    
+    //4
+    int a,a1,a10;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    cout<<a10<<endl<<a1;
+    
+    //5
+    int a,a1,a10;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    cout<<a10+a1;
+    
+    //6
+    int a,a1,a10;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    cout<<a1*10+a10%10;
+    
+    //7
+    int a,a100;
+    cout<<"Number: "; cin>>a;
+    a100=a/100%10;
+    cout<<a100;
+    
+    //8
+    int a,a1,a10;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    cout<<a1<<endl<<a10;
+    
+    //9
+    int a,a1,a10,a100;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    cout<<a1+a10+a100;
+    
+    //10
+    int a,a1,a10,a100;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    cout<<a1*100+a10*10+a100;
+    
+    //11
+    int a,a1,a10,a100;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    cout<<a10*100+a1*10+a100;
+    
+    //12
+    int a,a1,a10,a100;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    cout<<a1*100+a100%10*10+a10%10;    
+    
+    //13
+    int a,a1,a10,a100;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    cout<<a10%10*100+a100%10*10+a1;
+    
+    //14
+    int a,a1,a10,a100;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    cout<<a100*100+a1*10+a10%10;
+    
+    //15
+    int a,a100;
+    cout<<"Number: "; cin>>a;
+    a100=a/100%10;
+    cout<<a100;
+    
+    //16
+    int a,a1000;
+    cout<<"Number: "; cin>>a;
+    a1000=a/1000%10;
+    cout<<a1000;
+    
+    //17
+    int N;
+    cout<<"Second: "; cin>>N;
+    cout<<"Minute: "<<N/60;
+    
+    //18
+    int N;
+    cout<<"Second: "; cin>>N;
+    cout<<"Hour: "<<N/3600;
+    
+    //19
+    int N,Minute,Second;
+    cout<<"Second: "; cin>>N;
+    Minute=N/60;
+    Second=N%3600%60;
+    cout<<" Minute: "<<Minute<<" Second: "<<Second;
+    
+    //20
+    int N,Hour,Second;
+    cout<<"Second: "; cin>>N;
+    Hour=N/3600;
+    Second=N%3600%60;
+    cout<<" Hour: "<<Hour<<" Second: "<<Second;
+    
+    //21
+    int N,Hour,Minute,Second;
+    cout<<"Second: "; cin>>N;
+    Hour=N/3600;
+    Minute=N/60%60;
+    Second=N%3600%60;
+    cout<<" Hour: "<<Hour<<" Minute: "<<Minute<<" Second: "<<Second;
+    return 0;
+}
+
+
+
+
+
+Assosiy operatorlar2
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //1
+    int a,a1,a10,a100;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    cout<<a1+a10+a100;
+    
+    //2
+    int a,a1,a10,a100,a1000;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    a1000=a/1000%10;
+    cout<<(a1+a10+a100+a1000)/4;
+    
+    //3
+    int a,a1,a10000;
+    cout<<"Number: "; cin>>a;
+    a1=a%10;
+    a10000=a/10000%10;
+    cout<<a1+a10000;
+    
+    //4
+    int a;
+    cout<<"Kg: "; cin>>a;
+    cout<<"Tonna: "<<a/1000;
+    
+    //5
+    int a,Dm,M;
+    cout<<"Sm: "; cin>>a;
+    Dm=a%100/10;
+    M=a/100;
+    cout<<M<<" Metr "<<Dm<<" Dm ";
+    
+    //6
+    int a,Km,Dm;
+    cout<<"Sm: "; cin>>a;
+    Km=a/100000;
+    Dm=a%100000/10;
+    cout<<Km<<" Km "<<Dm<<" Dm ";
+    
+    //7
+    int a,Km,M;
+    cout<<"Sm: "; cin>>a;
+    Km=a/100000;
+    M=a%100000/100;
+    cout<<Km<<" Km "<<M<<" M ";
+    
+    //8,9
+    int a,Km,M,Dm,Sm;
+    cout<<"Sm: "; cin>>a;
+    Km=a/100000;
+    M=a%100000/100;
+    Dm=a%100000%100/10;
+    Sm=a%100000%100%10;
+    cout<<Km<<" Km "<<M<<" M "<<Dm<<" Dm "<<Sm<<" Sm ";
+    
+    //10
+    int V,Day,Hour;
+    cout<<"V: "; cin>>V;
+    Day=V/1440;
+    Hour=V%1440/60;
+    cout<<" Day: "<<Day<<endl<<" Hour: "<<Hour;
+    
+    //11
+    int a,b;
+    cout<<"Mb/s: "; cin>>a;
+    cout<<"Gb: "; cin>>b;
+    cout<<"How many hours: "<<(b*1024)/(a*3600);
+    
+    //12
+    int a,b;
+    cout<<"Flash drive on bit: "; cin>>a;
+    cout<<"Size of the file on Mb: "; cin>>b;  //1mb=8*1024*1024
+    cout<<"How many files can combine into oneself: "<<a/8/1024/1024/b;
+    
+    //13
+    float a,b;
+    cout<<"Flash drive on bit: "; cin>>a;
+    cout<<"Size of the file on Mb: "; cin>>b;  //1mb=8*1024*1024
+    cout<<"How many files can combine into oneself: "<<(a/8/1024/1024)/b;
+    
+    //14
+    long long   t,b,m;
+    cout<<"Flash drive on terrabayt: "; cin>>t;
+    cout<<"Size of the file on bayt: "; cin>>b;
+    t=t*8*1024*1024*1024*1024;
+    b=b*8;
+    m=8*1024*1024;
+    cout<<"How many files can combine into oneself: "<<(t/b)<<endl;
+    cout<<"Remaining megabayt "<<((t%b))/m<<endl;;
+    
+    //15
+    int a,Day,Hour,Minute,Second;
+    cout<<"Second: "; cin>>a;
+    Day=a/86400;
+    Hour=a%86400/3600;
+    Minute=a%86400%3600/60;
+    Second=a%60;
+    cout<<Day<<" Days "<<Hour<<" Hour "<<Minute<<" Minute "<<Second<<" Second ";
+    return 0;
+}
+
+
+
+5 Dars Chiziqli
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //1
+    int a,x,sum;
+    cout<<"Dollar: "; cin>>x;
+    cout<<"Yevro: "; cin>>a;
+    sum=x*11200+a*10900;
+    cout<<"Sum: "<<sum;
+    
+    //2
+    int a,a1,a10,a100,sumA,b,b1,b10,b100,B,Dif;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    b1=b%10;
+    b10=b/10%10;
+    b100=b/100%10;
+    (a>99 && a<1000) && (b>99 && b<1000);
+    sumA=a1+a10+a100;
+    B=b1*b10*b100;
+    Dif=sumA-B;
+    cout<<"Difference: "<<(Dif>0)*Dif+(Dif<0)*(-Dif);
+    
+    //3
+    int a,b,sum;
+    cout<<"Pen: "; cin>>a;
+    cout<<"Pencil: "; cin>>b;
+    sum=a*5000+b*2000;
+    cout<<"Sum: "<<sum;
+    
+    //4
+    int a,b,c,d;
+    cout<<"Building: "; cin>>a;
+    cout<<"Stage: "; cin>>b;
+    cout<<"Rom: "; cin>>c;
+    cout<<"Chair: "; cin>>d;
+    cout<<"Amount of chairs: "<<a*b*c*d;
+    
+    
+    return 0;
+}
+
+
+
+
+Foundation 2.0
+
+Kiritish chiqarish va o’zlashtirish operatori
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //1
+    int a,P;
+    cout<<"A: "; cin>>a;
+    P=a*4;
+    cout<<"Perimetr: "<<P;
+    
+    //2
+    int a,S;
+    cout<<"A: "; cin>>a;
+    S=a*a;
+    cout<<"Square: "<<S;
+    
+    //3
+    int a,b,S,P;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    S=a*b;
+    P=2*(a+b);
+    cout<<"Square: "<<S<<endl;
+    cout<<"Perimetr: "<<P;
+    
+    //4
+    int a,V,S;
+    cout<<"A: "; cin>>a;
+    V=a*a*a;
+    S=6*a*a;
+    cout<<"Volume: "<<V<<endl;
+    cout<<"Square: "<<S;
+    
+    //5
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"Arithmetic mean: "<<(a+b)/2;
+    
+    //6
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"Addition: "<<a+b<<endl;
+    cout<<"Subtraction: "<<a-b<<endl;
+    cout<<"Multiplication : "<<a*b<<endl;
+    
+    //7
+    int a,b,c;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    c=a;//1=2
+    a=b;//2=0
+    b=c;//2=2
+    cout<<"Changing to B: "<<a<<endl<<"Changing to A: "<<b;
+    
+    //8
+    int a,b,c,t;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    t=a;//2 =2
+    a=c;//1=2
+    c=t;//2=0
+    t=b;//2 =2
+    b=c;//1=2
+    c=t;//2=0
+    cout<<"\n Exchange: a="<<a<<"\n Exchange: b="<<b<<"\n Exchange: c="<<c<<endl;
+    
+    //9,10
+    int x,y,a,b,Price_chocolate, Price_candy;
+    cout<<"X :"; cin>>x;
+    cout<<"A :"; cin>>a;
+    cout<<"Y :"; cin>>y;
+    cout<<"B :"; cin>>b;
+    Price_chocolate= a/x;
+    Price_candy= b/y;
+    cout<<"1kg=Price: "<<Price_chocolate<<endl;
+    cout<<"Ykg=Price: "<<Price_candy<<endl;
+    cout<<"Difference between chocolate and candy: "<<(Price_chocolate-Price_candy);
+
+    return 0;
+}
+
+
+
+Mantiqiy amallarga oid masalalar
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //1
+    int A;
+    cout<<"A: "; cin>>A;
+    bool isA=A>0;
+    cout<<boolalpha<<isA;
+    
+    //2
+    int A;
+    cout<<"A: "; cin>>A;
+    bool isA=A>0 && A%2==1;
+    cout<<boolalpha<<isA;
+    
+    //3
+    int A;
+    cout<<"A: "; cin>>A;
+    bool isA=A>0 && A%2==0;
+    cout<<boolalpha<<isA;
+    
+    //4
+    int A,B;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    bool isB=B<=3,isA=A>2;
+    cout<<boolalpha<<isA && isB; 
+    
+    //5
+    int A,B;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    bool isA=A>0,isB=B<-2;
+    cout<<boolalpha<<isA || isB;
+    
+    //6
+    int A,B,C;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    cout<<"C: "; cin>>C;
+    bool isA=A<=B && B<=C;
+    cout<<boolalpha<<isA;
+    
+    //7
+    int A,B;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    bool isA=A%2==1 && B%2==1;
+    cout<<boolalpha<<isA;
+    
+    //8
+    int A,B,Sum;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    bool isA,isB;
+    isA=(A%2==1);
+    isB=(B%2==1);
+    Sum=isA+isB;
+    bool result = (Sum >= 1);
+    cout<<boolalpha<<result<<endl;
+    
+    //9
+    int A,B,Sum;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    bool isA,isB;
+    isA=(A%2==1);
+    isB=(B%2==1);
+    Sum=isA+isB;
+    bool result = (Sum == 1);
+    cout<<boolalpha<<result<<endl;
+    
+    //10
+    int A,B,Sum;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    bool isA,isB;
+    isA=(A%2==1 || A%2==0);
+    isB=(B%2==1 || B%2==0);
+    Sum=isA+isB;
+    bool result = (Sum == 2);
+    cout<<boolalpha<<result<<endl;
+    
+    //11
+    int A,B,C,Sum;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    cout<<"C: "; cin>>C;
+    bool isA,isB,isC;
+    isA=(A>0);
+    isB=(B>0);
+    isC=(C>0);
+    Sum=isA+isB+isC;
+    bool result = (Sum == 3);
+    cout<<boolalpha<<result<<endl;
+    
+    //12
+    int A,B,C,Sum;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    cout<<"C: "; cin>>C;
+    bool isA,isB,isC;
+    isA=(A>0);
+    isB=(B>0);
+    isC=(C>0);
+    Sum=isA+isB+isC;
+    bool result = (Sum >= 1);
+    cout<<boolalpha<<result<<endl;
+    
+    //13
+    int A,B,C,Sum;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    cout<<"C: "; cin>>C;
+    bool isA,isB,isC;
+    isA=(A>0);
+    isB=(B>0);
+    isC=(C>0);
+    Sum=isA+isB+isC;
+    bool result = (Sum == 1);
+    cout<<boolalpha<<result<<endl;
+    
+    //14
+    int A,B,C,Sum;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    cout<<"C: "; cin>>C;
+    bool isA,isB,isC;
+    isA=(A>0);
+    isB=(B>0);
+    isC=(C>0);
+    Sum=isA+isB+isC;
+    bool result = (Sum == 2);
+    cout<<boolalpha<<result<<endl;
+    
+    //15
+    int a;
+    cout<<"A: "; cin>>a;
+    bool isA=a%2==0 && a>9 && a<100;
+    cout<<boolalpha<<isA;
+    
+    //16
+    int a;
+    cout<<"A: "; cin>>a;
+    bool isA=a%2==1 && a>99 && a<1000;
+    cout<<boolalpha<<isA;
+    
+    //17
+    int a,b,c,Sum;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    cout<<"C: "; cin>>c;
+    bool isA,isB,isC;
+    isA=(a==b || b==c || a==b);
+    isB=(a==b || b==c || a==b);
+    isC=(a==b || b==c || a==b);
+    Sum=isA+isB+isC;
+    bool result=(Sum>=2);
+    cout<<boolalpha<<result;
+    
+    //18
+    int a,a1,a10,a100;
+    cout<<"A: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    bool isA=a>99 && a<1000 && a1!=a10 && a10!=a100 && a100!=a1;
+    cout<<boolalpha<<isA;
+
+    //19
+    int a,a1,a10,a100;
+    cout<<"A: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    bool isA=a>99 && a<1000 && a100>a10 && a10>a1;
+    cout<<boolalpha<<isA;
+    
+    //20
+    int a,a1,a10,a100;
+    cout<<"A: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    bool isA=a>99 && a<1000 && a100>a10 && a10>a1 || a1>a10 && a10>a100;
+    cout<<boolalpha<<isA;
+    
+    //21
+    int a,a1,a10,a100;
+    cout<<"A: "; cin>>a;
+    a1=a%10;
+    a10=a/10%10;
+    a100=a/100%10;
+    bool isA=a>99 && a<1000 && a1==a100;
+    cout<<boolalpha<<isA;
+    
+    return 0;
+}
+
+
+

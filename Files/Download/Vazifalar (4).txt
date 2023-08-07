@@ -1,0 +1,9 @@
+1. 2 ta butun songa ega Tuple toifasidan iborat to'plam berilgan. Ularni tartib bo'yicha bitta son sifatida satrga joylashtiring.
+
+[(1, 3), (7, 2) (4, 10)] -> "1234710" (Qiyin)
+
+2. Satr ko'rinishda bir son berilgan. Bu sonni tub ko'paytuvchilarga ajrating va quyidagi ko'rinishida listda saqlovchi dastur yozing.
+
+(tub son, soni)
+
+"10" -> [(2, 1), (5, 1)] (Eng qiyin)

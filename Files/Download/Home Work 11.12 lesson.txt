@@ -1,0 +1,412 @@
+#include <iostream>
+#include <unistd.h>
+using namespace std;
+int main()
+{
+    //1
+    for(int i=1; i<=10; i++){
+        cout<<" "<<i;
+    }
+
+    //2
+    int a;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<=10; i++){
+        cout<<a<<"*"<<i<<"="<<i*a<<endl;
+    }
+    
+    //3
+    int a;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<=20; i++){
+        if(i%2==0){
+            cout<<i<<endl;
+        }
+    }
+    
+    //4
+    int a;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<=a; i++){
+        if(i%2==1){
+            cout<<i<<endl;
+        }
+    }
+    
+    //5
+    int a,b,sum=0;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    for(; a<=b; a++){
+        sum+=a;
+    }
+    cout<<"Sum: "<<sum;
+    
+    //6
+    int a,b,multiplication=1;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    for(; a<=b; a++){
+        multiplication*=a;
+    }
+    cout<<"Multiplication: "<<multiplication;
+    
+    //7
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    for(; a<=b; a++){
+        if(a%2==0){
+            cout<<a<<endl;
+        }
+    }
+    
+    //8
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    for(; a<=b; a++){
+        if(a%2==1){
+            cout<<a<<endl;
+        }
+    }
+    
+    //9
+    int a,b,sum=0,multiplication=1;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    for(; a<=b; a++){
+        if(a%2==0){
+            sum+=a;
+            
+        }
+         else{
+            multiplication*=a;
+            }
+    }
+    cout<<"Sum of even num: "<<sum<<endl<<"Multiplication of odd num: "<<multiplication;
+    
+    //10
+    int a;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<=a; i++){
+        if(a%i==0){
+            cout<<" "<<i<<endl;
+        }
+    }
+    
+    //11
+    int a,sum=0;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<=a; i++){
+        if(a%i!=0){
+            sum+=i;
+        }
+    }
+    cout<<"Sum: "<<sum<<endl;
+    
+    //12
+    int a,sum=0;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<a; i++){
+        if(a%i==0){
+            sum+=i;}
+    }
+        if(sum==a){ 
+        cout<<"Perfect num ";
+        }  
+        
+        else{
+            cout<<"Not perfect num ";
+        }
+    
+    //13
+    int num,sum=0;
+    cout<<"Enter num: "; cin>>num;
+    for(;num>0;){
+        sum+=num%10;
+        num/=10;
+    }
+    cout<<"Sum: "<<sum;
+    
+    //14
+    int sum=0;
+    for(int num; num!=0;){
+    cout<<"Enter num: "; cin>>num;
+    sum+=num;
+    }
+    cout<<"Sum: "<<sum;
+    
+    //15
+    int max=0;
+    for(int num; num!=0;){
+    cout<<"Enter num: "; cin>>num;
+        if(num>max){
+            max=num;
+        }
+    }
+    cout<<"Max: "<<max;
+    
+    //16
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    for(int i=2; i>0; i++){
+        if(a%i==0 && b%i==0){
+            cout<<"EKUB: "<<i;
+            break;
+        }
+    }
+
+    //17
+    int a,b,max;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    if(a>b){
+      max=a;
+    }
+    else{
+        max=b;
+    }
+    for(; max>0; max++){
+        if (max%a==0 && max%b==0){
+            cout<<"EKUK: "<<max;
+            break;
+           
+        } 
+    }
+    
+    //18
+    int num,k,degree=1;
+    cout<<"Enter num: "; cin>>num;
+    cout<<"Enter k: "; cin>>k;
+    for(int i=0; i<k; i++){
+        degree*=num;
+    }
+    cout<<num<<"^"<<k<<"="<<degree;
+    
+    //19
+    int a,multiplication=1;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<=a ; i++){
+        multiplication*=i;
+    }
+    cout<<"Multiplication: "<<multiplication;
+    
+    //20
+    int sec;
+    cout<<"Secund: "; cin>>sec;
+    for (int i=0; i<sec; ++i){
+        cout<<sec-i<<endl;
+        sleep(1); 
+    }
+    
+    
+    //While 25
+    
+    //3
+    for(int i=10; i>=1; i--){
+        cout<<" "<<i;
+    }
+    
+    //4
+    int num;
+    cout<<"Enter num: "; cin>>num;
+    for(int i=1; i<=num; i++){
+        cout<<" "<<i<<endl;
+    }
+    
+    //5
+    int num;
+    cout<<"Enter num: "; cin>>num;
+    for(int i=num; i>=1; i--){
+        cout<<" "<<i<<endl;
+    }
+    
+    //6
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    for(; a<=b; a++){
+        cout<<" "<<a<<endl;
+    }
+    
+    //7
+    int a,b;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    for(; b>=a; b--){
+        cout<<" "<<b<<endl;
+    }
+    
+    //8
+    int sum;
+    for(int i=1; i<=10; i++){
+        sum+=i;
+    }
+    cout<<"Sum: "<<sum<<endl;
+    
+    //9
+    int a,b,sum=0;
+    cout<<"A: "; cin>>a;
+    cout<<"B: "; cin>>b;
+    for(; a<=b; a++){
+        sum+=a;
+    }
+    cout<<"Sum: "<<sum;
+    
+    //10
+    int a;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<=a; i++){
+        if(i%2==1){
+            cout<<i<<endl;
+        }
+    }
+    
+    //11
+    int a;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<=a; i++){
+        if(i%2==0){
+            cout<<i<<endl;
+        }
+    }
+    
+    //12
+    int a;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<=10; i++){
+        cout<<a<<"*"<<i<<"="<<i*a<<endl;
+    }
+    
+    //13
+    int a;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<=a; i++){
+        if(a%i==0){
+            cout<<" "<<i<<endl;
+        }
+    }
+    
+    //14
+    int a,sum=0;
+    cout<<"A: "; cin>>a;
+    for(int i=1; i<a; i++){
+        if(a%i==0){
+            sum+=i;}
+    }
+        if(sum==a){ 
+        cout<<"Perfect num ";
+        }  
+            else{
+            cout<<"Not perfect num ";
+            }
+            
+    //15
+    int num,sum=0;
+    cout<<"Enter num: "; cin>>num;
+    for(;num>0;){
+        sum+=num%10;
+        num/=10;
+    }
+    cout<<"Sum: "<<sum;
+    
+    //16
+    int num,max=0;
+    for(int i=1; i<=num; i++){
+        cout<<"Enter num: "; cin>>num;
+        if(num!=0 && num>max){
+            max=num;}
+            else{
+                break;
+            }
+    }
+    cout<<"Max: "<<max;
+    
+    //17
+    float num,sum=0,a;
+    for(int i=1; i<=num; i++){
+        cout<<"Enter num: "; cin>>num;
+         if(num!=0){
+            sum+=num;
+            a=sum/i;
+         } 
+    }
+    cout<<"Arithmetic mean: "<<a<<endl;
+    
+    //18
+    int num,k;
+    cout<<"Enter k: "; cin>>k;
+    cout<<"Enter num: "; cin>>num;
+    for(;num>0;num--){
+        cout<<k<<" ";
+    }
+    
+    //19
+    int num,sum=0;
+    cout<<"Enter num: "; cin>>num;
+    for(int i=1; i<=num; i++){
+        sum+=i*i;
+    }
+    cout<<"Sum quadro num = "<<sum<<endl;
+    
+    //20
+    int n;
+    cout<<"Enter number: "; cin>>n;
+    for(int i=1; i<=n; i++){
+        if(i%3==0 && i%5!=0){
+            cout<<i<<" "<<endl;}
+    }
+    
+    //21
+    int A,B,C;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    cout<<"C: "; cin>>C;
+    for(;A<=B;A++){
+        if(A%C==0){
+            cout<<A<<" "<<endl;
+        }
+    }
+    
+    //22
+    int num,sum=0;
+    cout<<"Enter number: "; cin>>num;
+    for(int i=1; i<=num; i++){
+        if(i>9 && i<100 && i%2==1){
+        sum=i%10*10+i/10%10;
+         cout<<sum<<endl;   
+        }
+    }
+    
+    //23
+    int num,sumJ=0,sumT=0;
+    cout<<"Enter number: "; cin>>num;
+    for(int i=1; i<=num; i++){
+        if(i%2==0){
+        sumJ+=i;
+        }
+            if(i%2==1){
+            sumT+=i;
+                
+            }
+    }
+    cout<<"Even: "<<sumJ<<endl<<"Odd: "<<sumT;
+    
+    //24
+    int num=0,counter=0;
+    for(int i=1;i>=0;){
+        cout<<"Enter number: "; cin>>num;
+        if (num%5==0){
+            counter++;
+        }
+            else if(num<0){
+            break;
+            }
+    } 
+    cout<<counter<<endl;
+    
+    
+    return 0;
+}

@@ -1,0 +1,132 @@
+// 4 masala
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,a1,a10,a100,a1000,a10000;
+   
+   cout<<"A: "; cin>>a;
+   a1=a%10;
+   a10=a/10%10;
+   a100=a/100%10;
+   a1000=a/1000%10;
+   a10000=a/10000%10;
+   
+   cout<<"1 lar va minglar yig'indisi: "<<(a1+a1000);
+   
+return 0;
+}
+
+// 5 masala
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int N;
+   
+   cout<<"N: "; cin>>N;
+   cout<<boolalpha<<( N>9 && N<100 && N%2 ==0 );
+   return 0;
+}
+
+// 6 masala
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,a1,b,b1,c,c1,d,d1,e,e1,sum;
+   
+   cout<<"A: "; cin>>a;
+   cout<<"B: "; cin>>b;
+   cout<<"C: "; cin>>c;
+   cout<<"D: "; cin>>d;
+   cout<<"E: "; cin>>e;
+   a1=a%10;
+   b1=b%10;
+   c1=c%10;
+   d1=d%10;
+   e1=e%10;
+   sum=a1+b1+c1+d1+e1;
+   cout<<sum;
+   return 0;
+}
+
+//8 masala
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,b,c,d,sum;
+   
+   cout<<"A: "; cin>>a;
+   cout<<"B: "; cin>>b;
+   cout<<"C: "; cin>>c;
+   cout<<"D: "; cin>>d;
+   bool isA,isB,isC,isD;
+   isA=(a>10 && a<50);//1
+   isB=(b>10 && b<50);//1
+   isC=(c>10 && c<50);//0
+   isD=(d>10 && d<50);//0
+   sum= isA+isB+isC+isD;
+   
+   
+   bool result=(sum==2);
+   cout<<boolalpha<<result;
+
+    return 0;
+}
+
+
+//1 masala
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,b,b1,c,c1;
+cout<<"Seconds since the start of the day: ";cin>>a;
+b=a/60; c=a-b*60;
+cout<<"minut: "<<b; cout<<" and second: "<<c<<endl;
+b=a/3600; c=a-b*3600;
+cout<<"hour: "<<b; cout<<" and second: "<<c;
+
+return 0;
+}
+
+
+// 7 masala
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,b,c,d,e,f,sum;
+   
+   cout<<"A: "; cin>>a;
+   cout<<"B: "; cin>>b;
+   cout<<"C: "; cin>>c;
+   cout<<"D: "; cin>>d;
+   cout<<"E: "; cin>>e;
+   cout<<"F: "; cin>>f;
+   bool isA,isB,isC,isD,isE,isF;
+   isA=((a>0)%2);//1
+   isB=((b>0)%2);//1
+   isC=((c>0)%2);//1
+   isD=((d>0)%2);//1
+   isE=((e>0)%2);//0
+   isF=((f>0)%2);//0
+  sum=(isA+isB+isC+isD+isF+isE);
+  bool result= (sum==4);
+  cout<<boolalpha<<result;
+  return 0;
+}

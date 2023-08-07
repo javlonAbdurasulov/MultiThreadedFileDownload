@@ -1,0 +1,29 @@
+1. N sekund berilgan. Shu sekundni soat:minut:sekund ko`rinishida
+ekranga chiqaring.   (7356 -> 2soat:2minut:36sekund)
+
+2. A bit fleshka berilgan.(uni hajmi bit). B fayl bor mb da. 
+A fleshkaga B fayldan nechta sig`ishini aniqlovchi
+dastur tuzing.
+
+3. a ta ruchka va b ta qalam berilgan. 1 ta ruchka
+5000, 1 ta qalam 2000. a va b ta qalam jami necha 
+pul bo'lishini aniqlo'vchi dastur tuzing.
+
+4. 5 xonali son berilgan. Berilgan sonni minglar va 
+birlar xonasidagi raqamlar yig'indisini aniqlovchi
+dastur tuzing.
+
+5.N soni berilgan. Shu sonning 2 xonali va juft ekanlikka tekshiring.
+(4->false;   14->true;  100 ->false)
+
+6. Beshta son berilgan.Shu sonlarning birlar xonasidagi raqamlar yig`indisini
+hisoblovchi dastur tuzing.
+(102,34,243,56,187) -> 2+4+3+6+7 = 22
+
+7. Berilgan 6 ta sondan eng kamida 4 tasi juft ekanligini rostlikka tekshiring.
+
+8.Berilgan 4 ta sondan 2 tasi ham 10dan katta, ham 50 dan kichik ekanligini
+ rostlikka tekshiring.
+
+ 
+ 

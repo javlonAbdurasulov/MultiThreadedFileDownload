@@ -1,0 +1,36 @@
+1. Rasmda berilgan struktura asosida klasslarni yarating, bunda rasmdagi ko'rsatkichning uchi tomondagi class va interface lardan  voris olish nazarda tutilgan. (oson)
+
+2. Rasmda berilgan struktura asosida klasslarni yarating (oson)
+
+3. Rasmda berilgan struktura asosida klass va interfacelarni yarating (qiyin)
+
+4. Rasmda berilgan struktura asosida klasslarni yarating (qiyin)
+
+5. Rasmda berilgan struktura asosida class va interface larni yarating. (oson)
+
+6. Rasmda berilgan struktura asosida class va interface larni yarating (qiyin)
+
+7. Quyida berilgan ma'lumotlar asosida class va interfacelarni yarating:
+
+TV, Phone, Fruit => Mahsulot.
+Tv, phone => Elektronika.
+Tv,phone, Avto, Plane(samolyot) =>Texnika.
+Tv => Pultda boshqariladi.
+Dasturchi, O’qituvchi, Doctor => Ishchi.
+Student, Ishchi => Odam.
+Cat, Dog, Bird   => Animal.
+Bird, Plane=> Parvoz qiladi.
+
+Har qanday mahsulotning narxi va ishlab chiqaruvchisi bor.
+Har qanday elektronika bu mahsulot bo’lib, modeli va nechchi voltda ishlashi bor.
+Har qanday texnika yoqish, o’chirish va remont qilish mumkin.
+Pult yordamida kanalni almashtirish, ovozni o’zgartirish va nastroykani o’zgartirish mumkin. 
+Barcha ishchilar ishlashadi va ularga  maosh belgilangan.
+Har qanday jonzot ovqatlanadi, uxlaydi va sayr qiladi.
+Odamlarning ismi, familiyasi va fuqaroligi bor. 
+Har qanday hayvonning 2 ta ko’zi bor va ovoz chiqazadi.
+
+Odamlar va hayvonlar jonzotdir.
+
+Talabalarning o’qiydigan ta’lim muassasasi bor va ular stipendiya olishadi.
+Parvoz qiladiganlar uchish va qo’nishni amalga oshiradi. (juda qiyin)

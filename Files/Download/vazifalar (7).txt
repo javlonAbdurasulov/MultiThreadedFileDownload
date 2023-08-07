@@ -1,0 +1,11 @@
+1. Hozirgi sanani vaqtsiz va hozirgi vaqtni sanasiz chiqazuvchi dastur tuzing. (Oson)
+
+2. Foydalanuvchi bergan vaqt va hozirgi vaqtning farqini (hh:mm:ss formatda) hisoblaydigan method tuzing. (Oson)
+
+3. Foydalanuvchi tug'ilgan yili, oyi va kunini kiritganida hozir necha yosh, oy va kunligini hisoblab chiqaradigan dastur tuzing. (Oson)
+
+4. Joriy sanadan oldingi va keyingi YAKSHANBA kunlarining sanasini yyyy.mm.dd formatda chiqarib beradigan method tuzing va bu methodni main() methodida chaqirib ishlating. (Oson)
+
+5. Joriy sanadan oldingi va keyingi YAKSHANBA kunlarining sanasini yyyy.mm.dd formatda chiqarib beradigan method tuzing va bu methodni main() methodida chaqirib ishlating. (Qiyin)
+
+6. Joriy vaqtni barcha time zonalarida ekranga chiqazuvchi method tuzing (Qiyin)

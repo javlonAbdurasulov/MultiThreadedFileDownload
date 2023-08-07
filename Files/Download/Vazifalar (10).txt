@@ -1,0 +1,13 @@
+1. Rasmdagi struktura bo’yicha klasslarni yarating. Bunda: 
+Book fieldlari:  — Avtori, narxi, chegirmasi, sarlovhasi va sahifalar soni 
+Book methodlari — sotuv narxini hisoblash, bojxona to’lovini hisoblash(sotuv narxini 30 %) 
+EBook fieldlari — yuklab olinadigan sayt va hajmi (MB)
+EBook methodlari —sarlovhani chop etish 
+PayperBook fieldlari – vazni, yetkazib berish vaqti(kun) (oson)
+
+2. Rasmda berilgan struktura asosida classlarni yarating. (oson)
+
+3. Rasmda berilgan struktura asosida klasslarni yarating va har bir klassni mumkin bo'lgan o'ziga tegishli atribute va methodlarini ham yozing. (oson)
+
+4. Har qanday hayvonning oyoqlari(nectaligi) va rangi bor. Ayrim hayvonlarning sut emizuvchilik xususiyati mavjud, Uy havonining ismi(laqabi) bor. Qushlar ham hayvon bo’lib  qanotining uzunligi bor va ular uchadigan yoki uchmaydigan bo’lishadi. Tuyaqush uchmaydigan qush va ko’rshapalak sut emizuvchi hisoblanadi.
+Hayvon (Animal) va uy hayvoni (Pet), qush(Bird), mushuk (Cat), it(Dog), sigir (Cow), Tuyaqush(Straus), Ko'rshapalak(Bat), burgut(Eagle)  klasslarini OOPning  inheritance prinsiplari asosida yarating. Klasslarning voris olish sxemasini tuzing. main methodida harbir hayvondan 1 tadan object yarating.

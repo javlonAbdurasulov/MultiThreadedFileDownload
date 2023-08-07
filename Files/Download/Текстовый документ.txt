@@ -1,0 +1,114 @@
+using System.Collections;
+
+namespace OOP_Classwork_8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //ArrayList arrayList = new ArrayList();
+
+            //arrayList.Add(1);
+            //arrayList.Add("Sokir");
+            //arrayList.Add(new ArrayList());
+
+            //List<int> numbers = new List<int>(50) {1,2,3,4,5,6,7,8,9};
+            //Создайте пустой List<int> и добавьте в него числа 1, 2 и 3.
+            //удалите второй элемент из списка.
+            //Добавьте цифру 4 в конец списка.
+            //Вывести элементы списка в консоль.
+            //Легко: доступ к элементам и их изменение
+            //numbers.RemoveRange(2,1);
+            //numbers.Add(4);
+            //foreach(int i in numbers)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+
+            //Создайте список List<string> и добавьте в него имена «Алиса», «Боб» и «Чарли».
+            //Получите доступ ко второму элементу списка и выведите его на консоль.
+            //Измените значение первого элемента на «Алекс».
+            //Вывести все элементы списка в консоль.
+            //Промежуточный уровень: сортировка и поиск
+            //List<string> list = new List<string>() { "Алиса", "Боб", "Чарли" };
+            //Console.WriteLine(list[1]);
+            //list[0] = "Алекс";
+            //foreach (string i in list)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //Создайте List<int> и заполните его 10 случайными числами.
+            //Отсортируйте список в порядке возрастания.
+            //Вывести отсортированный список на консоль.
+            //Найдите определенное число в списке и напечатайте, было ли оно найдено или нет.
+            //Промежуточный уровень: фильтрация и проецирование
+            //List<int> numbers = new List<int>();
+            //Random random = new Random();
+
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    numbers.Add(random.Next(0,20));
+            //}
+            //foreach (int i in numbers)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine();
+            //numbers.Sort();
+            //foreach (int i in numbers)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine(numbers.Contains(4));
+
+            //Создайте List<string> с несколькими случайными словами.
+            //Отфильтруйте список, чтобы включить только слова, начинающиеся с буквы «А», и сохраните результат в новом списке.
+            //Выведите отфильтрованный список на консоль.
+            //Создайте новый список, содержащий длины слов в отфильтрованном списке.
+            //Выведите длины слов в консоль.
+            //Сложно: Продвинутые манипуляции
+            //List<string> list = new List<string>() { "privet","javlon","Abdurasulov","Shokir bot"};
+            //list.Sort();
+            //List<int> length= new List<int>();
+            //foreach (string item in list) {
+            //    Console.WriteLine(item);
+            //    length.Add(item.Length);
+            //}
+            //foreach (int item in length)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            
+            
+            
+            //Создайте список List<double> и заполните его несколькими случайными десятичными числами.
+            //Найдите сумму, среднее, минимальное и максимальное значения в списке.
+            //Удалите из списка все числа меньше 5.
+            //Вычислите квадратный корень каждого числа в списке и сохраните результаты в новом списке.
+            //Выведите измененный список квадратных корней на консоль.
+
+            List<double> list = new List<double>();
+            Random random = new Random();
+            int randoms=random.Next(5, 10);
+            for (int i = 0; i < randoms; i++)
+            {
+                list.Add(random.Next(0,15));
+            }
+            int  counter = list.Count;
+            int sum = 0;
+            //int sum = list.Sum();
+            
+            Console.WriteLine(list.Sum());
+            Console.WriteLine(list.Sum()/list.Count());
+            Console.WriteLine(list.Max());
+            Console.WriteLine(list.Min());
+            
+
+
+
+
+        }
+    }
+}

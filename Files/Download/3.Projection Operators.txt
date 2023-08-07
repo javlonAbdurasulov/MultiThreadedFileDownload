@@ -1,0 +1,17 @@
+Vazifa 1: O'rtacha darajali
+Berilgan raqamlar ro'yxatidan juft raqamlarni olgan holda yangi ro'yxat yarating, shu bilan birga raqamlar sonini ham hisoblang.
+
+Vazifa 2: O'rtacha darajali
+Berilgan matnlar ro'yxatidan har bir matnni "Matn (X)" formatida yangi ro'yxat yarating, shu bilan birga matnlar sonini ham hisoblang. X raqamini matning indeksi bilan almashtiring.
+
+Vazifa 3: O'rtacha darajali
+Berilgan mijozlar ro'yxatidan mijozlar nom va familiyasini olgan holda yangi ro'yxat yarating.
+
+Vazifa 4: Yuqori darajali
+Berilgan xodimlar ro'yxatidan har bir xodim uchun ishga kelsa bir qo'shimcha xabar (string) yaratib, xodimlar ro'yxatini ushbu qo'shimcha xabar bilan bog'langan ro'yxatga o'tkazing.
+
+Vazifa 5: Yuqori darajali
+Berilgan o'quvchilar ro'yxatidan har bir o'quvchi uchun o'quvchi nomi va o'quvchining darslarini o'z ichiga olish uchun ro'yxat yarating. Har bir o'quvchi ob'ektida "Nomi" va "Darslar" xususiyatlari bo'lsin.
+
+Vazifa 6: Yuqori darajali
+Berilgan mijozlar va buyurtmalar ro'yxatlari orqali mijozlarning buyurtmalari haqidagi ma'lumotlarni olish uchun "SelectMany" operatorini ishlatib, mijozlar va buyurtmalar bilan bog'langan yangi ro'yxat yaratib oling.

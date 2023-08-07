@@ -1,0 +1,233 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    //4
+    /*int i=1,N;
+    cout<<"N: "; cin>>N;
+    while ( i<=N ){
+        
+        cout<<i<<" "<<endl;
+        i++;}
+        
+    //5
+    int N;
+    cout<<"N: "; cin>>N;
+    while ( N>=1 ){
+        
+        cout<<N<<" "<<endl;
+        N--;}
+        
+    //6
+    int a,b;
+    cout<<"A: "; cin>>a;        
+    cout<<"B: "; cin>>b;  
+    while(a<=b){
+        cout<<a<<endl;
+        a++;
+    }
+    
+    
+    //7
+    int a,b;
+    cout<<"A: "; cin>>a;        
+    cout<<"B: "; cin>>b;  
+    while(a<=b){
+        cout<<b<<endl;
+        b--;
+    }
+    
+    
+    //8
+    int a=1,sum=0;
+    
+    while(a<=10){
+        sum+=a;
+        a++;
+        }
+        cout<<sum<<endl;
+        
+    //9
+    int a,b,sum=0;
+    cout<<"A: "; cin>>a;        
+    cout<<"B: "; cin>>b; 
+    while(a<=b){
+      sum+=a;
+      a++;
+    }
+    cout<<"Sum: "<<sum;
+    
+    //10
+    int a=1,N;
+    cout<<"N: "; cin>>N;
+    
+    while (N>=a){
+        if(a%2==1){
+            cout<<a<<endl;
+            
+            
+        }a++;
+        }
+    
+    
+    //11
+    int a=1,N;
+    cout<<"N: "; cin>>N;
+    
+    while (N>=a){
+        if(a%2==0){
+            cout<<a<<endl;
+            
+            
+        }a++;
+        }
+        
+    
+    //12
+    int a,n=1;
+    cout<<"A: "; cin>>a;        
+    while(n<=10){
+        cout<<a<<"*"<<n<<"="<<(a*n)<<endl;
+       n++;
+    }*/
+   
+   
+    //13
+    int a=1,N;
+    cout<<"N: "; cin>>N;
+    
+    while (N>=a){
+        if(N%a==0){
+            cout<<a<<endl;
+            
+            
+        }a++;
+        }
+
+    
+    //14
+    int num,i=1,sum=0;
+    cout<<"Enter num: "; cin>>num;
+    while(i<num){		
+    if(num%i==0)  {
+        sum+=i;
+    }  
+    i++;    
+    }
+    if(sum==num){
+        cout<<"Perfect number ";
+    }
+    else{
+        cout<<"Not perfect number ";
+    }
+    
+    
+    //15
+    int num,sum=0;
+    cout<<"Enter num: "; cin>>num;
+    while(num>0){
+        sum+=num%10;
+        num/=10;}
+    cout<<"Sum: "<<sum;
+    
+    
+    //16
+    int num,max=0;
+    while(num!=0){
+        cout<<"Enter number: "; cin>>num;
+        if(num>max){
+           max=num; 
+        }
+        }
+    cout<<"Max: "<<max<<endl;
+    
+    
+    //17
+    float num,a=-1,sum=0;
+    
+    while(num!=0){
+    cout<<"Enter number: "; cin>>num;
+    sum+=num;
+    a++;
+    }
+    cout<<"Arithmetic mean: "<<sum/a<<endl;
+    
+    
+    //18
+    float num,k,i=1;
+    cout<<"Enter K: "; cin>>k;
+    cout<<"Enter number: "; cin>>num;
+    while(i<num){
+        cout<<k<<endl;
+        i++;
+    }
+    
+    
+    //19
+    int a=1,n,sum=0;
+    cout<<"Enter number: "; cin>>n;
+    while(a<=n){
+    sum+=(a*a);
+    a++;
+    }
+    cout<<"Multi quadro num = "<<sum<<endl;
+    
+    
+    //20
+    int a=1,n;
+    cout<<"Enter number: "; cin>>n;
+    while(a<=n){
+        if(a%3==0 && a%5!=0){
+            cout<<a<<" "<<endl;}
+        a++;    
+    }
+        
+    //21
+    int A,B,C;
+    cout<<"A: "; cin>>A;
+    cout<<"B: "; cin>>B;
+    cout<<"C: "; cin>>C;
+    while(A<=B){
+        if(A%C==0){
+            cout<<A<<" "<<endl;
+        }A++;
+    }
+    
+    //22
+    int num,i=1,sum=0;
+    cout<<"Enter number: "; cin>>num;
+    while(i<=num){
+        if(i>9 && i<100 && i%2==1){
+        sum=i%10*10+i/10%10;
+         cout<<sum<<endl;   
+        }
+        i++;
+    }
+    
+    //23
+    		
+    while(i<=num){
+        if(i%2==0){
+            
+        sumJ+=i;}
+        if(i%2==1){
+            
+        sumT+=i;}
+    
+
+    i++;}
+    cout<<"Juft: "<<sumJ<<endl<<"Toq: "<<sumT;
+    
+    //24
+    int num=0,counter=0;
+    while(num>=0){
+        cout<<"Enter number: "; cin>>num;
+        if(num%5==0){
+           counter++;
+        }
+        }
+    cout<<counter<<endl;
+
+
+   return 0;}
